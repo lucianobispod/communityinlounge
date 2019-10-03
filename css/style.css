@@ -140,7 +140,7 @@ p {
 }
 
 .data{
-  width: 21vw;
+  width: 20vw;
   height: 4vh;
   font-size: 1em;
   color: var(--azul);
@@ -149,12 +149,14 @@ p {
 
   display: flex;
   align-items: center;
+
 }
 
 .identificacao{
-  width: 21vw;
+  width: 20vw;
   height: 13.5vh;
   padding: 0.2em 0.5em ;
+
 }
 
 .identificacao .evento_titulo{
@@ -165,19 +167,17 @@ p {
 
 .identificacao .comuni_evento{
   font-size: 1.2em;
-  color: #808284;
+  color: var(--cinza);
 }
 
 .box_parti-bot{
   display: flex;
-   width: 21vw;
-   height: 8vh;
+   width: 20vw;
+   height: 7vh;
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 0.5em;  
-
-   /* background: #808284; */
 }
 
 .box_parti-bot .partici{
@@ -253,8 +253,8 @@ p {
     }
   }
  
-
   /* FIM DO TITULO */
+
 
   /* LINHA */
   
@@ -264,6 +264,7 @@ p {
   }
 
   /* FIM LINHA  */
+
 
 
 /* SECTION SOBRE NÓS */
@@ -310,15 +311,13 @@ p {
 .texto_p{
   width: 20vw;
   color: var(--preto);
-  overflow-wrap: break-word;
-  
+  overflow-wrap: break-word; 
 }
 
 .sobre_imagem{
   height: 18vh;
   max-width: 10vw;
   flex-grow: 1;
-
 }
 
 .sobre_descricao{
@@ -341,46 +340,6 @@ p {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* EVENTOS COMUNIDADES */
 
 .eventos_comunidade{
@@ -395,18 +354,53 @@ p {
 .titulo_eventos{
   margin: 1.7em 0 1.5em 0;
   font-size: 2.1em;
-
 }
 
  .list_card{
    
    width: 90vw;
-   height: 30vh;
+   height: 25vh;
 
    display: flex;
    justify-content: space-around;
    align-items: center;   
+
+  }
+
+/* FIM EVENTOS COMUNIDADES */
+
+
+/* EVENTOS THOUGHTWORKS */
+
+.home_laranja {
+  background-color: #f68e31;
+  clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
+  height: 63vh;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.home_crie-evento_box{
+  height: 40vh;
 }
 
 
- /* FIM INDEX */
+.home_titulo-tw {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+  .home_titulo-eventos-tw{
+    height: 18vh;
+    padding-top: 2em;
+}
+
+/* FIM EVENTOS THOUGHTWORKS */
+
+
+
+
+/* FIM INDEX */
