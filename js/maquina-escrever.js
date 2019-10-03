@@ -8,5 +8,5 @@ function typeWrite(elemento) {
     });
 }
 
-const titulo = document.getElementById('titulo__home'); 
+const titulo = document.getElementById('titulo_home'); 
 typeWrite(titulo);
