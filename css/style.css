@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root {
+  --azul: #25bcce;
+  --laranja: #f68e31;
+  --preto: #231f20;
+  --cinza: #808284;
+  --fonte: sans-serif;
+  --cinzaclaro: #ccc;
+  --verde: #29803f;
+  --font: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: var(--font);
+}
+
+
+
+
+/*HEADER*/
+
+#header {
+    width: 100vw;   
+    height: 4vw;
+    min-height: 4vw;
+    
+    background: var(--azul);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+
+  .header_box {
+    height: 6.5vh;
+    width: 40vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .mask{
+      border-radius: 10px;
+      background: white; 
+      padding: 0 .3em;
+  }
+  
+  .header_pesquisa {
+    height: 4vh;
+    width: 25vw;
+    border: none;
+    border-radius: 10px;
+    padding: 0 .8em;
+  }
+  
+  #icone_buscar {
+    color: var(--cinza);
+    cursor: pointer;
+  }
+
+  #icone_buscar:hover {
+    color: var(--preto  );
+    cursor: pointer;
+  }
+
+  .header_menu {
+    height: 6.5vh;
+    width: 55vw;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header_menu ul {
+    height: 5vh;
+    width: 50vw;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    list-style-type: none;
+  }
+
+  .header_menu li {
+    margin: 1.8em;
+  }
+
+  .header_menu a {
+    font-family: var(--fonte);
+    color: white;
+    text-decoration: none;
+  
+    padding: 0.6em;
+    
+  }
+  
+  .header_menu #li_border {
+    border: 2px solid white;
+    border-radius: 10px;
+    min-height: 4vh;
+    
+    display: flex;
+    align-items: center;
+  }
+  /*FIM HEADER*/
+  
+  
+  /* INDEX */
+  .section_banner{
+    height: 600px;   
+    width: 100vw; 
+    background: #29803f;
+  }
+
+  .section_titulo{
+    height: 40vh;
+   width: 100vw;
+    display:flex;
+    justify-content: center;
+ }
+
+ .mask_titulo{
+    width: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .titulo {
+    text-transform: uppercase;
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+ }
+ 
+ .titulo_home::after {
+   content: '|';
+   margin-left: 4px;
+   opacity: 1;
+   animation: pisca .7s infinite;
+ }
+ 
+ @keyframes pisca {
+   0%, 100% {
+       opacity: 1;
+   }
+   50% {
+       opacity: 0;
+   }
+ }
+ 
+  .linha__banner{
+    width: 50vw;
+    margin: 1.2em auto;
+ }
+
+ /* FIM INDEX */
