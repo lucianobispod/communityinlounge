@@ -5,7 +5,6 @@
   --laranja: #f68e31;
   --preto: #231f20;
   --cinza: #808284;
-  --fonte: sans-serif;
   --cinzaclaro: #ccc;
   --verde: #29803f;
   --font: 'Open Sans', sans-serif;
@@ -21,10 +20,90 @@ h1,
 h2,
 h3,
 h4,
+a,
 p {
   font-family: var(--font);
 }
 
+
+
+
+
+
+
+  /* CARDS*/
+
+  .card {
+    width: 20vw;
+    height: 20vh;
+    border-radius: 10px;
+    border: 1px solid var(--cinzaclaro);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  
+    background: #fff;
+  
+  }
+  
+  .data{
+    width: 20vw;
+    height: 4vh;
+    font-size: 1em;
+    color: var(--azul);
+    font-weight: 700;
+    padding: 1em ;
+  
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .identificacao{
+    width: 20vw;
+    height: 12vh;
+    padding: 0.2em 0.5em ;
+  
+  }
+  
+  .identificacao .evento_titulo{
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+  }
+  
+  .identificacao .comuni_evento{
+    font-size: 1.2em;
+    color: var(--cinza);
+  }
+  
+  .box_parti-bot{
+    display: flex;
+     width: 20vw;
+     height: 5vh;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: .2em .6em;
+  }
+  
+  .box_parti-bot .partici{
+    color:var(--cinza);
+  }
+  
+  #btn_inscrever {
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    width: 110px;
+    height: 40px;
+    background: #25bcce;
+  }
+  
+  /*FIM CARDS*/
+  
 
 /*HEADER*/
 
@@ -123,83 +202,11 @@ p {
   
 
 
-  /* CARDS*/
 
-.card {
-  width: 20vw;
-  height: 20vh;
-  border-radius: 10px;
-  border: 1px solid var(--cinzaclaro);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
-  background: #fff;
-
-}
-
-.data{
-  width: 20vw;
-  height: 4vh;
-  font-size: 1em;
-  color: var(--azul);
-  font-weight: 700;
-  padding: 1em ;
-
-  display: flex;
-  align-items: center;
-
-}
-
-.identificacao{
-  width: 20vw;
-  height: 13.5vh;
-  padding: 0.2em 0.5em ;
-
-}
-
-.identificacao .evento_titulo{
-  font-size: 1.4em;
-  font-weight: bold;
-  margin-bottom: 0.3em;
-}
-
-.identificacao .comuni_evento{
-  font-size: 1.2em;
-  color: var(--cinza);
-}
-
-.box_parti-bot{
-  display: flex;
-   width: 20vw;
-   height: 7vh;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 0.5em;  
-}
-
-.box_parti-bot .partici{
-  color:var(--cinza);
-}
-
-#btn_inscrever {
-  text-decoration: none;
-  border-radius: 10px;
-  color: white;
-  border: none;
-  width: 110px;
-  height: 40px;
-  background: #25bcce;
-}
-
-/*FIM CARDS*/
 
 
   
   /* INDEX */
-
 
     /* BANNER */
     
@@ -266,95 +273,22 @@ p {
   /* FIM LINHA  */
 
 
-
-/* SECTION SOBRE NÓS */
-
-.section_sobrenos{
-  height: 80vh;
-  width: 100vw;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-}
-
-.container-geral_sobre{
-  height: 70vh;
-  width: 65vw;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-
-}
-
-.linnha_sobre{
-  width: 62vw;
-  height: 20vh;
-
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.sobre_titulo{
-  height: 18vh;
-  max-width: 25vw; 
-  flex-grow: 2;
-  overflow-wrap: break-word;
   
-}
-
-.texto_p{
-  width: 20vw;
-  color: var(--preto);
-  overflow-wrap: break-word; 
-}
-
-.sobre_imagem{
-  height: 18vh;
-  max-width: 10vw;
-  flex-grow: 1;
-}
-
-.sobre_descricao{
-  height: 18vh;
-  max-width: 25vw;
-  overflow-wrap: break-word;
-  flex-grow: 2;
-
-}
-
-.centro{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.sobre_imagem img{
-  height: 130px;
-  width: 150px;
-}
-
-
 /* EVENTOS COMUNIDADES */
 
 .eventos_comunidade{
-  height: 60vh;
+  height: 55vh;
   width: 100vw;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+}  
 
 .titulo_eventos{
-  margin: 1.7em 0 1.5em 0;
+  margin: 1.9em 0 1.9em 0;  
   font-size: 2.1em;
-}
+}  
 
  .list_card{
    
@@ -365,9 +299,9 @@ p {
    justify-content: space-around;
    align-items: center;   
 
-  }
+  } 
 
-/* FIM EVENTOS COMUNIDADES */
+/* FIM EVENTOS COMUNIDADES */  
 
 
 /* EVENTOS THOUGHTWORKS */
@@ -401,6 +335,52 @@ p {
 /* FIM EVENTOS THOUGHTWORKS */
 
 
+
+/* SECTION SOBRE NÓS */
+
+.section_sobre{
+  height: 63vh;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.container-geral_sobre{
+  height: 43vh;
+  width: 52vw;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.titulo_sobre{
+  font-size: 2.3em; 
+}
+
+.sobre_texto{
+  height: 25vh;
+  width: 50vw;
+}
+
+.texto_p{
+ font-size: 1.8em;
+  color: var(--preto);
+  overflow-wrap: break-word; 
+}
+
+.call_sobrenos{
+background: var(--laranja);
+padding: 1.2em;
+font-size:1.3em; 
+text-decoration: none;
+color: #fff;
+}
+/* FIM SECTION SOBRE NOS */
 
 
 /* FIM INDEX */
