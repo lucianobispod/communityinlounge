@@ -126,8 +126,8 @@ p {
   /* CARDS*/
 
 .card {
-  width: 21em;
-  height: 12.5em;
+  width: 20vw;
+  height: 20vh;
   border-radius: 10px;
   border: 1px solid var(--cinzaclaro);
   display: flex;
