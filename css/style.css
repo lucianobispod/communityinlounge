@@ -134,9 +134,6 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-    /* position: fixed;
-    z-index: 1; */
   }
 
 
@@ -199,7 +196,6 @@ p {
   }
 
   .header_menu a {
-    font-family: var(--fonte);
     color: white;
     text-decoration: none;
   
