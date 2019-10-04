@@ -124,9 +124,7 @@ p {
 
 #header {
     width: 100vw;   
-    height: 4vw;
-    min-height: 4vw;
-    
+    height: 10vh;
     background: var(--azul);
 
     display: flex;
