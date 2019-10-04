@@ -72,18 +72,16 @@ p {
   .identificacao .comuni_evento{
     font-size: 1.2em;
     color: var(--cinza);
-
   }
   
   .box_parti-bot{
     display: flex;
      width: 21vw;
-     height: 4vh;
+     height: 5.8vh;
      display: flex;
      justify-content: space-between;
      align-items: center;
      padding: 0em .6em;
-
   }
   
   .box_parti-bot .partici{
@@ -91,13 +89,13 @@ p {
   }
   
   #btn_inscrever {
+    background: var(--azul);
     text-decoration: none;
     border-radius: 10px;
     color: white;
     border: none;
     width: 110px;
     height: 40px;
-
   }
   
 .circle{
@@ -229,7 +227,7 @@ p {
 
 
   /* TITULO */
-    .section_titulo{
+    .section_titulo_index{
     height: 37vh;
     width: 100vw;
       display:flex;
@@ -246,14 +244,14 @@ p {
       align-items: center;
   }
 
-  .titulo {
+  .titulo_index {
       text-transform: uppercase;
       font-size: 3em;
       text-align: center;
       font-weight: bold;
   }
   
-  .titulo::after {
+  .titulo_index::after {
     content: '|';
     margin-left: 4px;
     opacity: 1;
@@ -306,7 +304,6 @@ p {
    display: flex;
    justify-content: space-around;
    align-items: center;   
-
   } 
 
 /* FIM EVENTOS COMUNIDADES */  
@@ -357,7 +354,7 @@ p {
 }
 
 .container-geral_sobre{
-  height: 43vh;
+  height: 62vh;
   width: 52vw;
 
   display: flex;
@@ -371,7 +368,7 @@ p {
 }
 
 .sobre_texto{
-  height: 25vh;
+  min-height: 44vh;
   width: 50vw;
 }
 
