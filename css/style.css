@@ -21,6 +21,7 @@ h2,
 h3,
 h4,
 a,
+span,
 p {
   font-family: var(--font);
 }
@@ -502,5 +503,126 @@ color: #fff;
 
 /* LOGIN */
 
+.login_section{
+  display: flex;
+}
+
+.login_box_imagem{
+  height: 100vh;
+  width: 40vw;
+  background-image: linear-gradient(rgba(177, 27, 84, 0.5), rgba(177, 27, 84, 0.5)), 
+  url(../imagens/imagem.jpg);
+  background-size: cover;
+}
+
+.login_container{
+  height: 100vh;
+  width: 60vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.login_box_form{
+  height: 85vh;
+  width: 25vw;
+  border-radius: 3px;
+  box-shadow: 1px 2px 2px 1px #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+ 
+}
+
+.titulo_login{
+  height: 10vh;
+  width: 23vw;
+  padding: 1em 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.login_form{
+  height: 40vh;
+  width: 23vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_form input{
+  height: 7vh;
+  width: 17vw;
+  padding: 1em;
+  margin-bottom: 1.5em; 
+  border-radius: 3px;
+  background: #e2dfdfc5;
+  border: 1px solid var(--cinzaclaro);
+  color: var(--cinza);
+  font-size:1em; 
+}
+
+.login_form span {
+  height: 3vh;
+  width: 17vw;
+  text-align: start;
+  margin-bottom:1em; 
+ }
+
+.login_form button{
+  height: 7vh;
+  width: 17vw;
+  border: none;
+  border-radius: 3px;
+  background: var(--azul);
+  color: #fff;
+}
+
+.login_box_outraconta{
+  height: 18vh;
+  width: 23vw;
+
+  color: var(--cinza);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.botao_google_login{
+  height: 5vh;
+  width: 7vw;
+  border: 2px solid var(--cinza); 
+  border-radius: 3px;
+  background: none;
+}
+
+.ic_gr{
+  color: var(--cinza);
+}
+
+.login_link_cadastrar{
+  color: var(--cinza);
+  height: 8vh;
+  padding: 1em 0;
+}
+
+.link{
+  text-decoration: none;
+  color: var(--cinza );
+}
+
+.font_medio{
+font-size: 1em;
+}
+
+.font_pequeno{
+font-size: .8em;
+}
 
 /* FIM LOGIN */
