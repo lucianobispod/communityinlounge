@@ -283,7 +283,7 @@ p {
 /* EVENTOS COMUNIDADES */
 
 .eventos_comunidade{
-  height: 55vh;
+  height: 67vh;
   width: 100vw;
 
   display: flex;
@@ -343,8 +343,8 @@ p {
 
 /* SECTION SOBRE NÓS */
 
-.section_sobre{
-  height: 63vh;
+.section_sobre {
+  height: 70vh;
   width: 100vw;
 
   display: flex;
