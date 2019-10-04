@@ -29,9 +29,9 @@ p {
   /* CARDS*/
 
   .card {
-    width: 20vw;
-    height: 20vh;
-    border-radius: 10px;
+    width: 22vw;
+    height: 25vh;
+    border-radius: 10px;  
     border: 1px solid var(--cinzaclaro);
     display: flex;
     flex-direction: column;
@@ -43,8 +43,8 @@ p {
   }
   
   .data{
-    width: 20vw;
-    height: 4vh;
+    width: 21vw;
+    height:3vh;
     font-size: 1em;
     color: var(--azul);
     font-weight: 700;
@@ -52,12 +52,11 @@ p {
   
     display: flex;
     align-items: center;
-  
   }
   
   .identificacao{
-    width: 20vw;
-    height: 12vh;
+    width: 21vw;
+    height: 13vh;
     padding: 0.2em 0.5em ;
   
   }
@@ -66,21 +65,24 @@ p {
     font-size: 1.4em;
     font-weight: bold;
     margin-bottom: 0.3em;
+
   }
   
   .identificacao .comuni_evento{
     font-size: 1.2em;
     color: var(--cinza);
+
   }
   
   .box_parti-bot{
     display: flex;
-     width: 20vw;
-     height: 5vh;
+     width: 21vw;
+     height: 4vh;
      display: flex;
      justify-content: space-between;
      align-items: center;
-     padding: .2em .6em;
+     padding: 0em .6em;
+
   }
   
   .box_parti-bot .partici{
@@ -94,7 +96,7 @@ p {
     border: none;
     width: 110px;
     height: 40px;
-    background: #25bcce;
+
   }
   
 .circle{
@@ -214,10 +216,6 @@ p {
   }
   /*FIM HEADER*/
   
-
-
-
-
 
   
   /* INDEX */
@@ -413,17 +411,20 @@ color: #fff;
 
 .linha_card{
   width: 45vw;
-  height: 20vh;
-  margin-bottom: 1em; 
+  height: 26vh;
+  margin-bottom: 1.5em; 
+
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .conteiner_section {
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  
 }
 
 .box_eventos_aprovados {
@@ -446,6 +447,7 @@ color: #fff;
   border-right: 1px solid var(--cinzaclaro);
 }
 
+
 .box_eventos_analise {
   height: 90vh;
   width: 50vw;
@@ -465,7 +467,6 @@ color: #fff;
   flex-direction: column;
   align-items: center;
 }
-
 
 /*REALIZADOS*/
 
@@ -497,3 +498,9 @@ color: #fff;
   align-items: center;
 }
 /*FIM MEUS EVENTOS */
+
+
+/* LOGIN */
+
+
+/* FIM LOGIN */
