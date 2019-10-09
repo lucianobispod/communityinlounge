@@ -134,30 +134,36 @@ p {
 
 
   .header_box {
-    height: 6.5vh;
-    width: 40vw;
+    width: 21vw;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
+    background: #231f20;
   }
 
-  .mask{
+  .imagem{
+    background:rebeccapurple;
+    height: 10vh;
+    width: 20vw;
+  }
+
+  /* .mask{
       border-radius: 10px;
       background: white; 
       padding: 0 .3em;
-  }
+  } */
   
-  .header_pesquisa {
+  /* .header_pesquisa {
     height: 4vh;
     width: 25vw;
     border: none;
     border-radius: 10px;
     padding: 0 .8em;
-  }
+  } */
   
-  #icone_buscar {
+  /* #icone_buscar {
     color: var(--cinza);
     cursor: pointer;
   }
@@ -165,30 +171,26 @@ p {
   #icone_buscar:hover {
     color: var(--preto  );
     cursor: pointer;
-  }
+  } */
 
   .header_menu {
-    height: 6.5vh;
-    width: 55vw;
+    height: 10vh;
+    width:76vw;
     
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
   }
   
   .header_menu ul {
-    height: 5vh;
+    height: 8vh;
     width: 50vw;
   
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   
     list-style-type: none;
-  }
-
-  .header_menu li {
-    margin: 1.8em;
   }
 
   .header_menu a {
@@ -196,17 +198,27 @@ p {
     text-decoration: none;
   
     padding: 0.6em;
-    
   }
-  
+
   .header_menu #li_border {
-    border: 2px solid white;
-    border-radius: 10px;
-    min-height: 4vh;
-    
-    display: flex;
-    align-items: center;
-  }
+    font-weight: bold;
+    border-bottom:  3px solid white;
+}
+
+.header_menu .ahover:hover {
+  font-weight: bold;
+  border-bottom:  3px solid white;
+}
+
+#buscar{
+  border-left: 1px solid white;
+  padding-left: 1.3em;
+}
+
+.header_menu .ul-login{
+  width: 10vw;
+}
+
   /*FIM HEADER*/
   
 
