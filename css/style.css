@@ -26,68 +26,74 @@ p {
   font-family: var(--font);
 }
 
-
   /* CARDS*/
 
-  .card {
-    width: 22vw;
+  .card{
+    position: relative;
+  }
+  
+  .card_imagem {
+    width: 20vw;
     height: 25vh;
-    border-radius: 10px;  
-    border: 1px solid var(--cinzaclaro);
+    border-radius: 5px;  
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    
+    background-image:  linear-gradient( var(--preto), transparent ), url(../images/img3.png); 
+    background-size: cover;
+}
   
+.card_titulo{
+  color: #fff;
+  font-size: 1.6em; 
+  position: absolute;
+  top: .5em;
+  left: .6em;
+}
+
+  .card_container_info{
     background: #fff;
-  
-  }
-  
-  .data{
-    width: 21vw;
-    height:3vh;
-    font-size: 1em;
-    color: var(--azul);
-    font-weight: 700;
-    padding: 1em ;
-  
+    width: 19vw;
+    min-height: 13.3vh;
+    border-radius: 5px;
+
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    flex-flow: column;
+    
+    position: absolute;
+    bottom: .2em;
+    left: .7em;
   }
-  
-  .identificacao{
-    width: 21vw;
-    height: 13vh;
-    padding: 0.2em 0.5em ;
-  
-  }
-  
-  .identificacao .evento_titulo{
-    font-size: 1.4em;
-    font-weight: bold;
-    margin-bottom: 0.3em;
 
+  .data{
+    width: 18vw;
+    height:5vh;
+    font-size: 1.8em;
+    font-weight: bold;
   }
   
-  .identificacao .comuni_evento{
-    font-size: 1.2em;
-    color: var(--cinza);
-  }
-  
-  .box_parti-bot{
-    display: flex;
-     width: 21vw;
-     height: 5.8vh;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 0em .6em;
-  }
-  
-  .box_parti-bot .partici{
-    color:var(--cinza);
-  }
-  
+.comunidade_titulo{
+  width: 18vw;
+  height: 3vh;
+
+  font-size: 1.3em; 
+}
+
+.box_parti-bot{
+  display: flex;
+   width: 18vw;
+   height: 5vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0em .6em;
+}
+
   #btn_inscrever {
     background: var(--azul);
     text-decoration: none;
@@ -117,8 +123,27 @@ p {
  font-style: italic;
  color: var(--cinza); 
 }
+
+/* LISTA D CARDS */
+
+.list_card{
+   
+  width: 70vw;
+  height: 30vh;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;   
+
+  /* background: red ; */
+ } 
+
+ /* FIM LISTA D CARDS */
+
   /*FIM CARDS*/
   
+
+
 
 /*HEADER*/
 
@@ -203,6 +228,7 @@ p {
   .header_menu #li_border {
     font-weight: bold;
     border-bottom:  3px solid white;
+    border-top: 3px solid white;
 }
 
 .header_menu .ahover:hover {
@@ -222,7 +248,6 @@ p {
   /*FIM HEADER*/
   
 
-  
   /* INDEX */
 
     /* BANNER */
@@ -238,7 +263,7 @@ p {
 
   /* TITULO */
     .section_titulo_index{
-    height: 37vh;
+    height: 45vh;
     width: 100vw;
       display:flex;
       justify-content: center;
@@ -293,62 +318,64 @@ p {
 /* EVENTOS COMUNIDADES */
 
 .eventos_comunidade{
-  height: 67vh;
+  height: 60vh;
   width: 100vw;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+
+  background: #25bcce;
 }  
 
 .titulo_eventos{
-  margin: 1.9em 0 1.9em 0;  
+  padding: 1.6em;  
   font-size: 2.1em;
+
+  background: firebrick;
 }  
 
- .list_card{
-   
-   width: 90vw;
-   height: 25vh;
-
-   display: flex;
-   justify-content: space-around;
-   align-items: center;   
-  } 
-
 /* FIM EVENTOS COMUNIDADES */  
-
 
 /* EVENTOS THOUGHTWORKS */
 
 .home_laranja {
   background-color: #f68e31;
-  clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
-  height: 63vh;
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+  height: 70vh;
 
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
+.box_eventos_tw{
+  height: 50vh;
+  width: 80vw;
+  /* background: #231f20; */
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
 .home_crie-evento_box{
   height: 40vh;
 }
-
 
 .home_titulo-tw {
   color: #ffffff;
   text-transform: uppercase;
   font-size: 2em;
+
+  /* background: #ccc;  */
 }
 
-  .home_titulo-eventos-tw{
-    height: 18vh;
-    padding-top: 2em;
-}
 
 /* FIM EVENTOS THOUGHTWORKS */
-
 
 
 /* SECTION SOBRE NÓS */
@@ -361,31 +388,38 @@ p {
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+
+  background: #ccc;
 }
 
 .container-geral_sobre{
-  height: 62vh;
-  width: 52vw;
+  height: 45vh;
+  width: 60vw;
 
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   flex-direction: column;
+
+  background: #29803f;
 }
 
 .titulo_sobre{
   font-size: 2.3em; 
+
+  background: yellow;
 }
 
 .sobre_texto{
-  min-height: 44vh;
-  width: 50vw;
+  max-width: 45vw;
 }
 
 .texto_p{
  font-size: 1.8em;
   color: var(--preto);
   overflow-wrap: break-word; 
+
+  background: gold; 
 }
 
 .call_sobrenos{
@@ -397,7 +431,36 @@ color: #fff;
 }
 /* FIM SECTION SOBRE NOS */
 
+/* CAIXA CRIE SEU EVENTO */
+
+.call_evento{
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2em;
+  background: #231f20;
+}
+
+.box_call_evento{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40vw;
+  height: 23vh;
+  border: 0.5em solid #25bcce;
+}
+
+.box_call_evento h4{
+  font-size: 2em;
+}
+
+
+/* FIM DA CAIXA CRIE SEU EVENTO */
+
+
 /* FIM INDEX */
+
 
 
 /* MEUS EVENTOS */
