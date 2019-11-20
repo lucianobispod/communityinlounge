@@ -7,6 +7,7 @@
   --cinza: #808284;
   --cinzaclaro: #ccc;
   --verde: #29803f;
+  --branco: #fff;
   --font: 'Open Sans', sans-serif;
 }
 
@@ -55,7 +56,7 @@ p {
 }
 
   .card_container_info{
-    background: #fff;
+    background:var(--branco);
     width: 19vw;
     min-height: 13.3vh;
     border-radius: 5px;
@@ -98,7 +99,7 @@ p {
     background: var(--azul);
     text-decoration: none;
     border-radius: 10px;
-    color: white;
+    color: var(--branco);
     border: none;
     width: 110px;
     height: 40px;
@@ -149,7 +150,7 @@ p {
 
 #header {
     width: 100vw;   
-    height: 10vh;
+    height: 12vh;
     background: var(--azul);
 
     display: flex;
@@ -174,76 +175,77 @@ p {
     width: 20vw;
   }
 
-  /* .mask{
-      border-radius: 10px;
-      background: white; 
-      padding: 0 .3em;
-  } */
-  
-  /* .header_pesquisa {
-    height: 4vh;
-    width: 25vw;
-    border: none;
-    border-radius: 10px;
-    padding: 0 .8em;
-  } */
-  
-  /* #icone_buscar {
-    color: var(--cinza);
-    cursor: pointer;
-  }
-
-  #icone_buscar:hover {
-    color: var(--preto  );
-    cursor: pointer;
-  } */
 
   .header_menu {
     height: 10vh;
-    width:76vw;
+    width:75vw;
+
+    /* background: red; */
     
     display: flex;
     align-items: center;
     justify-content: space-around;
   }
   
-  .header_menu ul {
+.container_menu_principal{
+    /* background: rosybrown; */
+
     height: 8vh;
-    width: 50vw;
-  
+    width: 45vw;
+    
+  }
+  .container_menu_principal ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
   
     list-style-type: none;
+    height: 8vh;
+    /* background: violet; */
+  }
+  
+  .container_menu_secundario{
+    width: 18vw;
+  }
+  
+  .container_menu_secundario ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    list-style-type: none;
+    height: 8vh;
+    /* background: violet; */
+  }
+  
+  .span_ou{
+    color: var(--branco);
+    font-style: italic;
   }
 
   .header_menu a {
-    color: white;
+    color: var(--branco);
     text-decoration: none;
-  
-    padding: 0.6em;
+    font-size: .95em;
+    /* background: yellowgreen; */
+
+    padding: 0.4em;
   }
 
   .header_menu #li_border {
-    font-weight: bold;
-    border-bottom:  3px solid white;
-    border-top: 3px solid white;
+    padding: .7em;
+    /* background: yellow; */
+    font-weight: 400;
+    border: var(--branco) 2px solid;
+    /* border-bottom:  2px solid white;
+    border-top: 2px solid white; */
 }
 
 .header_menu .ahover:hover {
-  font-weight: bold;
-  border-bottom:  3px solid white;
+  font-weight: 400;
+  border-bottom:  2px solid white;
 }
 
-#buscar{
-  border-left: 1px solid white;
-  padding-left: 1.3em;
-}
-
-.header_menu .ul-login{
-  width: 10vw;
-}
 
   /*FIM HEADER*/
   
@@ -318,22 +320,32 @@ p {
 /* EVENTOS COMUNIDADES */
 
 .eventos_comunidade{
-  height: 60vh;
+  height: 70vh;
   width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* background: #25bcce; */
+}  
+
+.eventos_container{
+  /* background: rebeccapurple; */
+  height: 60vh;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 
-  background: #25bcce;
-}  
-
+}
 .titulo_eventos{
-  padding: 1.6em;  
+  padding: 1em;  
   font-size: 2.1em;
 
-  background: firebrick;
+  /* background: firebrick; */
 }  
 
 /* FIM EVENTOS COMUNIDADES */  
@@ -342,8 +354,8 @@ p {
 
 .home_laranja {
   background-color: #f68e31;
-  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
-  height: 70vh;
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+  height: 75vh;
 
   display: flex;
   justify-content: center;
@@ -354,7 +366,7 @@ p {
 .box_eventos_tw{
   height: 50vh;
   width: 80vw;
-  /* background: #231f20; */
+  background: #231f20;
 
   display: flex;
   align-items: center;
@@ -368,8 +380,7 @@ p {
 
 .home_titulo-tw {
   color: #ffffff;
-  text-transform: uppercase;
-  font-size: 2em;
+  font-weight: 800;
 
   /* background: #ccc;  */
 }
@@ -389,25 +400,25 @@ p {
   justify-content: space-around;
   flex-direction: column;
 
-  background: #ccc;
+  /* background: #ccc; */
 }
 
 .container-geral_sobre{
-  height: 45vh;
-  width: 60vw;
+  height: 55vh;
+  width: 70vw;
 
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   flex-direction: column;
 
-  background: #29803f;
+  /* background: #29803f; */
 }
 
 .titulo_sobre{
   font-size: 2.3em; 
 
-  background: yellow;
+  /* background: yellow; */
 }
 
 .sobre_texto{
@@ -415,16 +426,17 @@ p {
 }
 
 .texto_p{
- font-size: 1.8em;
+  font-size: 1.2em;
+  width: 55vw;
+  max-height: 50vh;
   color: var(--preto);
   overflow-wrap: break-word; 
-
-  background: gold; 
+  /* background: gold;  */
 }
 
 .call_sobrenos{
 background: var(--laranja);
-padding: 1.2em;
+padding: .7em;
 font-size:1.3em; 
 text-decoration: none;
 color: #fff;
@@ -434,27 +446,34 @@ color: #fff;
 /* CAIXA CRIE SEU EVENTO */
 
 .call_evento{
-  height: 40vh;
+  height: 50vh;
+  
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin-top: 2em;
-  background: #231f20;
+  justify-content: center;
+  /* background: #231f20; */
 }
 
 .box_call_evento{
+  width: 55vw;
+  height: 26vh;
+  
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 40vw;
-  height: 23vh;
+  
   border: 0.5em solid #25bcce;
 }
 
 .box_call_evento h4{
   font-size: 2em;
 }
-
+.link_saiba_mais{
+  text-decoration: none;
+  background: var(--preto);
+  padding: 1em;
+  color: var(--branco);
+}
 
 /* FIM DA CAIXA CRIE SEU EVENTO */
 
