@@ -12,87 +12,101 @@
 </head>
 
 <body>
-        <header id="header">
-                <div class="header_box">
-                    <!--imagem-->
-                    <div class="mask">
-                        <form action="" method="GET">
-                            <input class="header_pesquisa" name="busca" type="text" placeholder="Pesquisar">
-                            <a>
-                                <i id="icone_buscar" class="fa fa-search"></i>
-                            </a>
-                        </form>
-                    </div>
-        
-                </div>
-                <nav class="header_menu">
-                    <ul>
-                        <li id="li_border">
-                            <a href="#">Crie seu evento</a>
-                        </li>
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">Sobre nós</a>
-                        </li>
-                        <li>
-                            <a href="meus-eventos.html">Eventos</a>
-                        </li>
-                        <li>
-                            <a href="login.html">Entrar</a>
-                        </li>
-        
-                    </ul>
-                </nav>
-            </header>
+    <!-- <header id="header">
+        <div class="header_box">
+            <div class="imagem"></div>
+        </div>
+
+        <nav class="header_menu">
+
+            <div class="container_menu_principal">
+                <ul>
+                    <li>
+                        <a class="ahover" id="li_border" href="#">Crie seu evento</a>
+                    </li>
+                    <li>
+                        <a class="ahover" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="ahover" href="#">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a class="ahover" href="meus-eventos.html">Eventos</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="container_menu_secundario">
+                <ul>
+                    <li>
+                        <a class="ahover" href="login.html">Entre</a>
+                    </li>
+                    <span class="span_ou">ou</span>
+                    <li>
+                        <a class="ahover" href="#">Cadastre-se</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header> -->
     <main>
+
+        
+        
         <section class="login_section">
+                
+                <div class="text_container">
 
-            <div class="login_box_imagem"></div>
-
-            <div class="login_container">
-
-                <div class="login_box_form">
+                    <div class="circle_login alta"></div>
+                    
+                    <div>
+                        <h2 class="cor letra_grande titulo_h2_login" id="titulo_home">Olá, seja bem vindo amigo!</h2>
+                        <h2 class="cor  letra_media">Entre para fazer seu evento conosco.</h2>
+                    </div>
+                    
+                    <div class="circle_login baixa"></div>
+                </div>
+                
+                <div class="login_container">
 
                     <div class="titulo_login">
-                        <h1>LOGIN</h1>
+                       <h1>Login</h1>
                     </div>
-
-                    <div>
+            
 
                         <form class="login_form" action="" method="">
-                            <input type="email" name="email_user" id="" placeholder="Email">
-                            <input type="password" name="password_user" id="" placeholder="Senha">
-                            <span><a class="link font_pequeno" href="#">Esqueceu a senha?</a></span>
+                            <div class="inpu_div">
+                               
+                                <div class="campo">
+                                    <label for="email_user"><i class="far fa-user"></i></label>
+                                    <input type="email" name="email_user" id="" placeholder="Email">
+                                </div>
+                                
+                                <div class="campo">
+                                    <label for="password_user"><i class="fas fa-unlock"></i></label>
+                                    <input type="password" name="password_user" id=""  placeholder="Senha">
+                                </div>
+
+                            </div>
+                            
                             <button type="submit">Enviar</button>
                         </form>
+                       
+                
 
-                        <div class="login_box_outraconta">
-
-                            <span> Ou faça login com</span>
-                            <button class="botao_google_login">
-                                <i class="fab fa-google ic_gr"></i>
-                            </button>
-
-                        </div>
-
+                    <div>
+                        <a class="login_reset_senha" href="#">Esqueceu a senha ?</a>
                     </div>
-
-
-                    <div class="login_link_cadastrar">
-                        <span>Não possui uma conta? <a class="link font_medio   "
-                                href="cadastro-usuario.html">Cadastre-se</a></span>
-                    </div>
-
-                </div>
+               
 
             </div>
 
         </section>
 
     </main>
-
+    <script src="./js/maquina-escrever.js"></script>
 </body>
 
 </html>
