@@ -33,8 +33,8 @@ p {
     background: var(--branco);
     border: 1px solid var(--cinzaclaro);
     border-radius: 10px;
-    width: 22vw;
-    height: 25vh;
+    width: 20vw;
+    height: 23vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -43,21 +43,22 @@ p {
   
 
   .data{
-    width: 20vw;
+    width: 18vw;
     height:5vh;
     font-size: 1.2em;
     font-weight: bold;
     color: var(--azul);
-    /* background: wheat; */
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
-
+    /* background: wheat; */
+    
   }
   .data p{
     /* background:gold; */
-    width: 19vw;
+    width: 17vw;
     height:5vh;
+    font-size: 1.3em;
   }
   .data i{
     color: var(--cinzaclaro);
@@ -66,24 +67,24 @@ p {
 .identificacao{
   /* background: teal; */
   max-height: 10vh;
-  width: 20vw;
+  width: 18vw;
 
 }
 
 .evento_titulo{
   /* background: tomato; */
-  font-size: 1em;
+  font-size: 1.2em;
 
 }
 .comuni_evento{
   /* background: turquoise; */
-  font-size: .95em;
+  font-size: 1em;
 
 
 }
 
 .box_parti-bot{
-   width: 20vw;
+   width: 18vw;
    height: 5vh;
    display: flex;
    justify-content: space-between;
@@ -95,6 +96,7 @@ p {
 
 .partici{
   /* background: saddlebrown; */
+  font-size: 1.2em;
 }
 
   .circle{
@@ -121,6 +123,8 @@ p {
   .text_italic{
    font-style: italic;
    color: var(--cinza); 
+  font-size: 1.2em;
+
   }
 
 /* LISTA D CARDS */
