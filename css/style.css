@@ -168,13 +168,22 @@ p {
     justify-content: center;
     align-items: center;
 
-    background: #231f20;
   }
 
   .imagem{
-    background:rebeccapurple;
     height: 10vh;
     width: 20vw;
+    /* background: var(--cinza); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .imagem img{
+    height: 9vh;
+    width: 15vw;
+    /* background: red; */
+
   }
 
 
@@ -228,7 +237,7 @@ p {
   .header_menu a {
     color: var(--branco);
     text-decoration: none;
-    font-size: .95em;
+    font-size: 1.1em;
     /* background: yellowgreen; */
 
     padding: 0.4em;
@@ -259,7 +268,7 @@ p {
     .section_banner{
       height: 600px;   
       width: 100vw; 
-      background: url("../images/banner.png")
+      background: rebeccapurple;
     }
 
   /* FIM BANNER */
