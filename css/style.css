@@ -601,24 +601,26 @@ color: #fff;
 /* LOGIN */
 
 .login_section{
-  height: 85vh;
-  width: 100vw;
+   width: 100vw;
   
   display: flex;
   justify-content: center;
+  align-items: center;
+  /* background: red; */
 }
 
 
 .text_container{
   background: var(--azul);
-  height: 90vh;
+  height: 99vh;
   width: 50vw;
   position: relative;
+  box-shadow: var(--cinzaclaro) 1px 1px 2px 0px ;
 }
 
 
 .login_container{
-height: 90vh;
+height: 99vh;
 width: 50vw;
 display: flex;
 align-items: center;
@@ -627,7 +629,18 @@ flex-direction: column;
 border-radius: 5px;
 box-shadow: var(--cinzaclaro) 1px 1px 2px 1px ;
 
+position: relative;
+
 }
+
+.fechar-login{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 1.5em;
+  color: var(--preto);
+}
+
 
 .circle_login{
   height: 150px;
@@ -649,12 +662,13 @@ box-shadow: var(--cinzaclaro) 1px 1px 2px 1px ;
 }
 
 .titulo_login{
-/* background: rebeccapurple; */
-color: 1.5em;
+/* background: rebeccapurple;   */
 height: 15vh;
 width: 20vw;
-font-size: 1.5em;
+font-size: 1.3em;
 }
+
+
 
 .letra_grande{
   font-size: 2em;
@@ -667,9 +681,16 @@ font-size: 1.5em;
   color: var(--branco);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 
+  /* background: rebeccapurple; */
 }
+
+.texto-amigo-login-esqueceu{
+  margin-left: 10px;
+  
+}
+
 .titulo_h2_login::after {
   content: '|';
   margin-left: 4px;
@@ -739,6 +760,7 @@ color: var(--branco);
 
   /* background: var(--verde); */
 }
+
 .login_reset_senha a {
   text-decoration: none;
   color: var(--cinza);
@@ -754,6 +776,7 @@ color: var(--branco);
   box-shadow: var(--cinzaclaro) 1px 1px 1px 1px;
   outline: 0;
 }
+
 @-webkit-keyframes swing
 {
     15%
@@ -831,6 +854,14 @@ color: var(--branco);
 }
 /* FIM LOGIN */
 
+/* ESQUECEU SENHA  */
+
+.titulo_esqueceu-senha{
+  height: 15vh;
+  width: 25vw;
+  font-size: 1.3em;
+}
+/* FIM ESQUECEU SENHA  */
 
 
 /*FOOTER*/
