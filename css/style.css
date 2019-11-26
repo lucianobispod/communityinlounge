@@ -730,13 +730,18 @@ color: var(--branco);
 }
 
 .login_reset_senha{
-  width: 15vw;
+  width: 14vw;
   color: var(--cinza);
   font-size: .8em;
   display: flex;
   justify-content: space-around;
   align-items: center;
+
   /* background: var(--verde); */
+}
+.login_reset_senha a {
+  text-decoration: none;
+  color: var(--cinza);
 }
 
 .call_recuperar-senha{
