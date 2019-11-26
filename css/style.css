@@ -825,3 +825,80 @@ color: var(--branco);
         animation-iteration-count: 1;
 }
 /* FIM LOGIN */
+
+
+
+/*FOOTER*/
+/* 
+.footer-main{
+  background: var(--cinza);
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+.footer_titulo{
+  font-size: 1em;
+  color: var(--branco);
+  background: var(--laranja);
+
+} */
+
+/*FOOTER*/
+
+.footer {
+  height: 12vh;
+  width: 100vw;
+  background: var(--cinza);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+.footer_empresa{
+  height: 10vh;
+  /* background: crimson; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contato {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background: cornflowerblue; */
+}
+
+.contato a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer_midiasocial {
+  height: 10vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  /* background: chocolate; */
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 15vw;
+  /* background: chartreuse; */
+}
+
+.icons_media {
+  font-size: 1.8em;
+}
+
+/*FIM FOOTER*/
