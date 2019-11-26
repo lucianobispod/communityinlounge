@@ -180,8 +180,8 @@ p {
   }
   
   .imagem img{
-    height: 9vh;
-    width: 15vw;
+    height: 8vh;
+    width: 13vw;
     /* background: red; */
 
   }
@@ -237,7 +237,7 @@ p {
   .header_menu a {
     color: var(--branco);
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1em;
     /* background: yellowgreen; */
 
     padding: 0.4em;
@@ -829,24 +829,6 @@ color: var(--branco);
 
 
 /*FOOTER*/
-/* 
-.footer-main{
-  background: var(--cinza);
-  height: 10vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-}
-
-.footer_titulo{
-  font-size: 1em;
-  color: var(--branco);
-  background: var(--laranja);
-
-} */
-
-/*FOOTER*/
-
 .footer {
   height: 12vh;
   width: 100vw;
