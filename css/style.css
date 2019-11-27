@@ -57,7 +57,7 @@ p {
     justify-content: space-around;
     flex-direction: column;
   }
-  
+
 
   .data-card-main{
     width: 20vw;
@@ -70,7 +70,7 @@ p {
     justify-content: flex-start;
 
     /* background: wheat; */
-    
+
   }
   .data-card-main p{
     /* background:gold; */
@@ -108,7 +108,7 @@ p {
    align-items: center;
    padding: 0em .6em;
    font-size: .8em;
-   
+
    /* background: yellow;   */
 
 }
@@ -131,7 +131,7 @@ p {
   color: var(--branco);
   border-radius:5px ;
 }
-/* 
+/*
 .link-card-main a:hover {
   background: var(--branco);
   color: var(--azul);
@@ -166,65 +166,83 @@ p {
     background: var(--branco);
     border: 1px solid var(--cinzaclaro);
     border-radius: 10px;
-    width: 20vw;
+    width: 21.5vw;
     height: 23vh;
+
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    flex-direction: column;
+
+    font-size: 16px;
+
   }
-  
+
 
   .data{
-    width: 18vw;
+    width: 20.5vw;
     height:5vh;
-    font-size: 1.2em;
     font-weight: bold;
     color: var(--azul);
+
     display: flex;
-    /* align-items: center; */
-    justify-content: center;
+    justify-content: space-between;
+
     /* background: wheat; */
-    
+
   }
   .data p{
     /* background:gold; */
-    width: 17vw;
     height:5vh;
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
-  .data i{
+  
+  
+  .data button{
+    background: none;
+
+    border: none;
+    width: 2vw;
+    height: 5vh;
+    cursor: pointer;
+    outline: 0;
+    }
+
+  .data button i{
     color: var(--cinzaclaro);
   }
 
+
 .identificacao{
   /* background: teal; */
-  max-height: 10vh;
-  width: 18vw;
+  height: 12vh;
+  width: 20.5vw;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .evento_titulo{
   /* background: tomato; */
-  font-size: 1.2em;
-
+  font-size: 1.08em;
 }
+
 .comuni_evento{
   /* background: turquoise; */
+  max-height: 4vh;
   font-size: 1em;
-
-
 }
 
 .box_parti-bot{
-   width: 18vw;
+   width: 20.5vw;
    height: 5vh;
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 0em .6em;
+   font-size: .6em;
    /* background: yellow; */
-   font-size: .8em;
 }
 
 .partici{
@@ -234,8 +252,8 @@ p {
 
   .circle{
     border-radius: 50%;
-  
   }
+
   .pequeno{
     height: 15px;
     width: 15px;
@@ -252,18 +270,26 @@ p {
     width: 25px;
     background: var(--laranja);
   }
-  
+
   .text_italic{
    font-style: italic;
-   color: var(--cinza); 
+   color: var(--cinza);
   font-size: 1.2em;
 
   }
 
 
+/*
+  @keyframes anima {
+    to {
+        opacity: 0;
+    }
+}
 
-
-
+.pisca {
+    animation: anima 4000ms ease infinite;
+}
+ */
 
 
 
@@ -280,28 +306,28 @@ p {
 /* LISTA D CARDS */
 
 .list_card{
-   
+
   width: 70vw;
   height: 30vh;
 
   display: flex;
   justify-content: space-around;
-  align-items: center;   
+  align-items: center;
 
   /* background: red ; */
- } 
+ }
 
  /* FIM LISTA D CARDS */
 
   /*FIM CARDS*/
-  
+
 
 
 
 /*HEADER*/
 
 #header {
-    width: 100vw;   
+    width: 100vw;
     height: 10vh;
     background: var(--azul);
 
@@ -328,7 +354,7 @@ p {
     align-items: center;
     justify-content: center;
   }
-  
+
   .imagem img{
     height: 8vh;
     width: 13vw;
@@ -342,43 +368,43 @@ p {
     width:75vw;
 
     /* background: red; */
-    
+
     display: flex;
     align-items: center;
     justify-content: space-around;
   }
-  
+
 .container_menu_principal{
     /* background: rosybrown; */
 
     height: 8vh;
     width: 45vw;
-    
+
   }
   .container_menu_principal ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-  
+
     list-style-type: none;
     height: 8vh;
     /* background: violet; */
   }
-  
+
   .container_menu_secundario{
     width: 16vw;
   }
-  
+
   .container_menu_secundario ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-  
+
     list-style-type: none;
     height: 8vh;
     /* background: violet; */
   }
-  
+
   .span_ou{
     color: var(--branco);
     font-style: italic;
@@ -409,15 +435,15 @@ p {
 
 
   /*FIM HEADER*/
-  
+
 
   /* INDEX */
 
     /* BANNER */
-    
+
     .section_banner{
-      height: 600px;   
-      width: 100vw; 
+      height: 600px;
+      width: 100vw;
       background: rebeccapurple;
     }
 
@@ -432,7 +458,7 @@ p {
       justify-content: center;
       align-items: center;
   }
- 
+
     .mask_titulo{
       width: 45vw;
       height: 35vh;
@@ -448,14 +474,14 @@ p {
       text-align: center;
       font-weight: bold;
   }
-  
+
   .titulo_index::after {
     content: '|';
     margin-left: 4px;
     opacity: 1;
     animation: pisca .7s infinite;
   }
-  
+
   @keyframes pisca {
     0%, 100% {
         opacity: 1;
@@ -464,12 +490,12 @@ p {
         opacity: 0;
     }
   }
- 
+
   /* FIM DO TITULO */
 
 
   /* LINHA */
-  
+
     .linha_banner{
       width: 50vw;
       margin: 0 auto;
@@ -490,7 +516,7 @@ p {
   justify-content: center;
 
   /* background: #25bcce; */
-}  
+}
 
 .eventos_container{
   /* background: rebeccapurple; */
@@ -503,13 +529,13 @@ p {
 
 }
 .titulo_eventos{
-  padding: 1em;  
+  padding: 1em;
   font-size: 2.1em;
 
   /* background: firebrick; */
-}  
+}
 
-/* FIM EVENTOS COMUNIDADES */  
+/* FIM EVENTOS COMUNIDADES */
 
 /* EVENTOS THOUGHTWORKS */
 
@@ -575,7 +601,7 @@ p {
 }
 
 .titulo_sobre{
-  font-size: 2.3em; 
+  font-size: 2.3em;
   /* background: yellow; */
 }
 
@@ -588,14 +614,14 @@ p {
   width: 55vw;
   max-height: 50vh;
   color: var(--preto);
-  overflow-wrap: break-word; 
+  overflow-wrap: break-word;
   /* background: gold;  */
 }
 
 .call_sobrenos{
 background: var(--laranja);
 padding: .7em;
-font-size:1.3em; 
+font-size:1.3em;
 text-decoration: none;
 color: #fff;
 }
@@ -604,8 +630,8 @@ color: #fff;
 /* CAIXA CRIE SEU EVENTO */
 
 .call_evento{
-  height: 50vh;
-  
+  height: 70vh;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -615,11 +641,11 @@ color: #fff;
 .box_call_evento{
   width: 55vw;
   height: 26vh;
-  
+
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
+
   border: 0.5em solid #25bcce;
 }
 
@@ -631,6 +657,14 @@ color: #fff;
   background: var(--preto);
   padding: 1em;
   color: var(--branco);
+}
+.linha-call-evento{
+  width: 20vw;
+  height: 4px;
+  border-radius: 5px ;
+  background: var(--cinzaclaro);
+  border: none;
+  margin: 0 auto;
 }
 
 /* FIM DA CAIXA CRIE SEU EVENTO */
@@ -660,7 +694,7 @@ color: #fff;
 .linha_card{
   width: 45vw;
   height: 26vh;
-  margin-bottom: 1.5em; 
+  margin-bottom: 1.5em;
 
   display: flex;
   justify-content: space-around;
@@ -672,7 +706,7 @@ color: #fff;
   height: 100vh;
   display: flex;
   align-items: flex-end;
-  
+
 }
 
 .box_eventos_aprovados {
@@ -710,7 +744,7 @@ color: #fff;
   width: 50vw;
   padding-top: 3em;
   border-left: 1px solid var(--cinzaclaro);
- 
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -752,7 +786,7 @@ color: #fff;
 
 .login_section{
    width: 100vw;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -798,7 +832,7 @@ position: relative;
   border-radius: 50%;
   background: var(--branco);
   position: absolute;
-  
+
 }
 
 .alta{
@@ -838,7 +872,7 @@ font-size: 1.3em;
 
 .texto-amigo-login-esqueceu{
   margin-left: 10px;
-  
+
 }
 
 .titulo_h2_login::after {
@@ -867,7 +901,7 @@ flex-direction: column;
   color: var(--cinza);
   padding: 0 .5em;
   outline: 0;
-  
+
 }
 .inpu_div{
 /* background: rebeccapurple; */
@@ -890,7 +924,7 @@ flex-direction: column;
     width: 20vw;
     /* background: #29803f; */
     }
-  
+
 .login_form button{
 background: var(--azul);
 border-radius: 5px;
@@ -938,7 +972,7 @@ color: var(--branco);
     {
         -webkit-transform: translateX(-5px);
        transform: translateX(-5px);
-    } 
+    }
     50%
     {
         -webkit-transform: translateX(3px);
@@ -1023,7 +1057,7 @@ color: var(--branco);
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: white;
+  color:var(--branco);
 }
 
 .footer_empresa{
@@ -1033,7 +1067,12 @@ color: var(--branco);
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
 }
+.footer_empresa span{
+  font-size: 14px;
+}
+
 .contato {
   height: 10vh;
   display: flex;
@@ -1067,7 +1106,7 @@ color: var(--branco);
 }
 
 .icons_media {
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 
 /*FIM FOOTER*/
