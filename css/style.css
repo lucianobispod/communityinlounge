@@ -826,25 +826,6 @@ color: var(--branco);
 }
 /* FIM LOGIN */
 
-
-
-/*FOOTER*/
-/* 
-.footer-main{
-  background: var(--cinza);
-  height: 10vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-}
-
-.footer_titulo{
-  font-size: 1em;
-  color: var(--branco);
-  background: var(--laranja);
-
-} */
-
 /*FOOTER*/
 
 .footer {
