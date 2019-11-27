@@ -27,7 +27,140 @@ p {
   font-family: var(--font);
 }
 
-  /* CARDS MEUS EVENTOS*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* CARDS MEUS EVENTOS */
+
+  .card-main{
+    background: var(--branco);
+    border: 1px solid var(--cinzaclaro);
+    border-radius: 10px;
+    width: 22.5vw;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  
+
+  .data-card-main{
+    width: 20vw;
+    height:6vh;
+    font-size: 1.41em;
+    font-weight: bold;
+    color: var(--azul);
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start;
+
+    /* background: wheat; */
+    
+  }
+  .data-card-main p{
+    /* background:gold; */
+    font-size: 1.4em;
+  }
+  .data-card-main i{
+    color: var(--cinzaclaro);
+  }
+
+.identificacao-card-main{
+  height: 11vh;
+  width: 20vw;
+  /* background: teal; */
+
+}
+
+.evento_titulo-card-main{
+  font-size: 1.4em;
+  /* background: tomato; */
+
+}
+.comuni_evento-card-main{
+  /* background: turquoise; */
+  font-size: 1.2em;
+  color: var(--cinza);
+
+
+}
+
+.box_parti-bot-card-main{
+   width: 20vw;
+   height: 6vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0em .6em;
+   font-size: .8em;
+   
+   /* background: yellow;   */
+
+}
+
+.partici-card-main{
+  /* background: saddlebrown; */
+  font-size: 1.2em;
+}
+
+
+.link-card-main{
+  /* padding: .9em; */
+}
+
+.link-card-main a {
+  padding: .9em;
+  text-decoration: none;
+  background: red;
+  background: var(--azul);
+  color: var(--branco);
+  border-radius:5px ;
+}
+/* 
+.link-card-main a:hover {
+  background: var(--branco);
+  color: var(--azul);
+}
+
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   .card{
     background: var(--branco);
@@ -126,6 +259,23 @@ p {
   font-size: 1.2em;
 
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* LISTA D CARDS */
 
@@ -751,7 +901,7 @@ color: var(--branco);
 }
 
 .login_reset_senha{
-  width: 14vw;
+  width: 11vw;
   color: var(--cinza);
   font-size: .8em;
   display: flex;
@@ -854,8 +1004,7 @@ color: var(--branco);
 }
 /* FIM LOGIN */
 
-<<<<<<< HEAD
-=======
+
 /* ESQUECEU SENHA  */
 
 .titulo_esqueceu-senha{
@@ -866,7 +1015,6 @@ color: var(--branco);
 /* FIM ESQUECEU SENHA  */
 
 
->>>>>>> 305ad25435cc692449e734399af84c018c7469d8
 /*FOOTER*/
 .footer {
   height: 12vh;
