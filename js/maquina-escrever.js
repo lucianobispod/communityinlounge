@@ -10,3 +10,6 @@ function typeWrite(elemento) {
 
 const titulo = document.getElementById('titulo_home'); 
 typeWrite(titulo);
+
+
+
