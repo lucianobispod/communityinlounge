@@ -27,21 +27,25 @@ p {
 }
 
 .comunidade_section {
-    height: 85vh;
     width: 100vw;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .text_container_comunidade {
     background: var(--azul);
-    height: 90vh;
+    height: 99vh;
     width: 50vw;
     position: relative;
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .comunidade_container {
-    height: 90vh;
+    height: 99vh;
     width: 50vw;
     display: flex;
     align-items: center;
@@ -51,76 +55,27 @@ p {
     box-shadow: var(--cinzaclaro) 1px 1px 2px 1px;
 }
 
-.circle_comunidade {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    background: var(--branco);
-    position: absolute;
-}
-
-.alta_comunidade {
-    top: 2vh;
-    left: -4vw;
-}
-
-.baixa_comunidade {
-    bottom: 2vh;
-    right: -4vw;
-}
-
 .titulo_comunidade {
     /* background: rebeccapurple; */
-    color: 1.5em;
     height: 15vh;
-    width: 20vw;
-    font-size: 1.5em;
-}
-
-.letra_grande_comunidade {
-    font-size: 2em;
-}
-
-.letra_media_comunidade {
-    font-size: 2.5em;
-}
-
-.text_container_comunidade {
-    color: var(--branco);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.titulo_h2_comunidade::after {
-    content: '|';
-    margin-left: 4px;
-    opacity: 1;
-    animation: pisca .7s infinite;
+    width: 40vw;
+    font-size: 1.4em;
 }
 
 .comunidade_form {
     /* background: royalblue; */
-    height: 65vh;
-    width: 25vw;
+    height: 80vh;
+    width: 40vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
 }
 
-.comunidade_form input {
-    height: 4.5vh;
-    width: 15vw;
-    border: none;
-    color: var(--cinza);
-    padding: 0 .5em;
-    outline: 0;
-}
-
 .inpu_div_comunidade {
     /* background: rebeccapurple; */
-    height: 55vh;
+    height: 70vh;
+    width: 35vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -128,17 +83,25 @@ p {
 }
 
 .comunidade_form .campo_comunidade {
-    border-radius: 5px;
+    /* border-radius: 5px; */
     color: var(--cinza);
     border-bottom: 2px solid var(--cinzaclaro);
     font-family: var(--font);
     display: flex;
     justify-content: space-evenly;
-    justify-content: inherit;
     align-items: center;
-    /* margin-bottom: 1em; */
-    width: 20vw;
+    width: 30vw;
     /* background: #29803f; */
+}
+
+.comunidade_form input {
+    height: 4.5vh;
+    width: 23vw;
+    border: none;
+    color: var(--cinza);
+    padding: 0 .5em;
+    outline: 0;
+    font-family: var(--font);
 }
 
 .comunidade_form button {
@@ -169,34 +132,44 @@ p {
 
 .campo_desc_comunidade {
     border-bottom: 2px solid var(--cinzaclaro);
-    font-family: var(--font);
     display: flex;
     justify-content: space-evenly;
     width: 20vw;
     height: 22vh;
 }
 
-.campo_desc_comunidade textarea {
+.descricao-comunidade {
+    font-family: var(--font);
+    color: var(--cinza);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30vw;
+    /* background: red; */
+}
+
+
+/* .campo_desc_comunidade textarea {
     width: 20vw;
     height: 20vh;
     border: none;
     overflow: auto;
-}
+} */
 
 .campo_foto_comunidade {
     border-radius: 5px;
     color: var(--cinza);
     border-bottom: 2px solid var(--cinzaclaro);
-    font-family: var(--font);
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 20vw;
-    background-color: #29803f;
+    /* background-color: #29803f; */
 }
 
 #textarea1 {
     border-radius: 5px;
+    width: 30vw;
     /* border-bottom: 2px solid var(--cinzaclaro); */
     resize: none;
     /* background-color: #f68e31; */
@@ -211,4 +184,37 @@ p {
     50% {
         opacity: 0;
     }
+}
+
+.circle_comunidade {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: var(--branco);
+    position: absolute;
+}
+
+.alta_comunidade {
+    top: 2vh;
+    left: -4vw;
+}
+
+.baixa_comunidade {
+    bottom: 2vh;
+    right: -4vw;
+}
+
+.letra_grande_comunidade {
+    font-size: 2em;
+}
+
+.letra_media_comunidade {
+    font-size: 2.5em;
+}
+
+.titulo_h2_comunidade::after {
+    content: '|';
+    margin-left: 4px;
+    opacity: 1;
+    animation: pisca .7s infinite;
 }
