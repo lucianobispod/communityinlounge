@@ -218,3 +218,12 @@ p {
     opacity: 1;
     animation: pisca .7s infinite;
 }
+
+
+input[type="file"]{
+    display: none;
+}
+
+.campo_foto_comunindade_label{
+    color: var(--font);
+}
