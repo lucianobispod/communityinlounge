@@ -4,10 +4,12 @@
     --laranja: #f68e31;
     --preto: #231f20;
     --cinza: #808284;
-    --cinzaclaro: #ccc;
+    --cinzaclaro: #D9D9D9;
     --verde: #29803f;
     --branco: #fff;
     --vermelho: #ee312c;
+    --amarelo: #fff34f;
+
     --font: 'Open Sans', sans-serif;
 }
 
@@ -238,7 +240,7 @@ div {
 /*HEADER*/
 
 #header {
-    width: 100vw;
+    width: 100%;
     height: 10vh;
     background: var(--azul);
     display: flex;
@@ -953,11 +955,12 @@ div {
 
 /*FIM FOOTER*/
 
+/* GERENCIAR EVENTO */
+
 .section-calendario-info {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
     /* background: rebeccapurple; */
 }
 
@@ -975,107 +978,73 @@ div {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 50vw;
-    height: 10vh;
+    width: 45vw;
+    height: 15vh;
+    border: 2px solid var(--cinzaclaro);
+    border-radius: 5px;
     /* background: rosybrown; */
 }
 
 .gerenciar-titulo {
     /* background: cornflowerblue; */
+    font-size: 1.4em;
 }
 
 .evento-filtro-mes {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 25vw;
+    width: 20vw;
     /* background: aqua; */
 }
 
+.evento-filtro-mes h2 {
+    font-size: 1em;
+}
+
 .evento-filtro-mes form select {
-    width: 15vw;
+    width: 10vw;
     height: 5vh;
-    border: none;
+    border: 1px solid var(--cinzaclaro);
     border-radius: 5px;
     outline: 0;
+    font-family: var(--font) ;
 }
 
 .container-lista-data {
-    /* background: blue; */
     height: 70vh;
     width: 45vw;
-    border: 1px solid var(--cinzaclaro);
+    border: 2px solid var(--cinzaclaro);
+    border-radius: 5px ;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    /* background: blue; */
 }
 
 .linha {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    /* background: azure; */
+    justify-content: space-around;
     height: 10vh;
     width: 42vw;
+    /* background: azure; */
 }
 
 .data-dia {
     height: 50px;
     width: 50px;
-    margin: 0 .3em;
     font-size: 1.5em;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--branco);
+    color: var(--cinza);
 }
 
-.container-aprovados-legenda {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 95vh;
-    /* background: chartreuse; */
-}
 
-.calendario-eventos-aprovados {
-    height: 95vh;
-    width: 40vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    /* background: #231f20; */
-}
-
-.calendario {
-    height: 40vh;
-    width: 30vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    /* background: coral; */
-}
-
-.linha-dia {
-    width: 29vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    /* background: chartreuse; */
-}
-
-.dia {
-    height: 50px;
-    width: 50px;
-    /* background: crimson; */
-}
-
-.legenda-calendario {
-    height: 45vh;
+.container-legenda-calendario {
+    height: 60vh;
     width: 40vw;
     display: flex;
     align-items: center;
@@ -1084,8 +1053,8 @@ div {
 }
 
 .legenda-calendario-pendente {
-    height: 43vh;
-    width: 25vw;
+    height: 50vh;
+    width: 30vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -1093,18 +1062,13 @@ div {
     /* background: chocolate; */
 }
 
-.legenda-calendario-aprovado {
-    height: 43vh;
-    width: 30vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    /* background: cornflowerblue; */
+.legenda-calendario-pendente h3 {
+    font-size: 2em;
 }
 
 .linha-legenda {
     /* background: rebeccapurple; */
+    border-bottom: var(--cinzaclaro) 2px solid;
     display: flex;
     align-items: center;
     height: 6vh;
@@ -1117,22 +1081,146 @@ div {
     margin: 0 1em;
 }
 
+.border-cinza {
+    border: 3px solid var(--cinzaclaro);
+}
+
+.border-verde {
+    border: 3px solid var(--verde);
+}
+
+.border-laranja {
+    border: 3px solid var(--laranja);
+}
+
+.border-vermelho {
+    border: 3px solid var(--vermelho);
+}
+
+.border-azul {
+    border: 3px solid var(--azul);
+}
+.border-amarelo {
+    border: 3px solid var(--amarelo);
+}
+
+
 .back-cinza {
-    background: var(--cinza);
+    background:var(--cinzaclaro);
 }
 
 .back-verde {
-    background: var(--verde);
+    background:var(--verde);
 }
 
 .back-laranja {
-    background: var(--laranja);
+    background:var(--laranja);
 }
 
 .back-vermelho {
-    background: var(--vermelho);
+    background:var(--vermelho);
 }
 
 .back-azul {
-    background: var(--azul);
+    background:var(--azul);
+}
+.back-amarelo {
+    background:var(--amarelo);
+}
+
+
+.section-lista-eventos-pendentes{
+    /* background: red; */
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista-eventos-pendentes{
+width: 90vw;
+height: 80vh;
+/* background: antiquewhite; */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+}
+
+.tiulo-lista-eventos{
+    width: 90vw;
+    /* height: 5vh; */
+    /* background: bisque; */
+    font-size: 1.8em;
+}
+
+.card-pendente{
+    /* background: cyan; */
+    height: 20vh;
+    width: 59vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.foto-pendente{
+    background: url('../images/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat ;
+    height: 20vh;
+    width: 18vw;
+}
+.container-informacoes-botoes{
+    height: 20vh;
+    width: 30vw;
+    /* background: darkblue; */
+    
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.titulo-info{
+font-size: 2em;
+}
+
+.data-info{
+    font-size: 1.5em;
+
+}
+
+.info{
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background: oldlace; */
+    height: 20vh;
+    width: 30.5vw;
+}
+
+.comunidade-info{
+    font-size: 1.2em;
+
+}
+
+.botoes{
+    /* background: chartreuse; */
+    width: 10vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.botoes button{
+    height: 5vh;
+    width: 4vw;
+    cursor: pointer;
+    font-size: 1.6em;
+    border: none;
+    outline: 0;
 }
