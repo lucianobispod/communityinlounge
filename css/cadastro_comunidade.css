@@ -16,13 +16,7 @@
     box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-a,
-span,
-p {
+h1, h2, h3, h4, a, span, p {
     font-family: var(--font);
 }
 
@@ -83,7 +77,7 @@ p {
 }
 
 .comunidade_form .campo_comunidade {
-    /* border-radius: 5px; */
+    border-radius: 5px;
     color: var(--cinza);
     border-bottom: 2px solid var(--cinzaclaro);
     font-family: var(--font);
@@ -148,7 +142,6 @@ p {
     /* background: red; */
 }
 
-
 /* .campo_desc_comunidade textarea {
     width: 20vw;
     height: 20vh;
@@ -167,7 +160,7 @@ p {
     /* background-color: #29803f; */
 }
 
-#textarea1 {
+.textarea_comunidade {
     border-radius: 5px;
     width: 30vw;
     /* border-bottom: 2px solid var(--cinzaclaro); */
@@ -177,8 +170,7 @@ p {
 }
 
 @keyframes pisca {
-    0%,
-    100% {
+    0%, 100% {
         opacity: 1;
     }
     50% {
@@ -217,4 +209,91 @@ p {
     margin-left: 4px;
     opacity: 1;
     animation: pisca .7s infinite;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.campo_foto_comunindade_label {
+    color: var(--font);
+}
+
+@media only screen and (max-device-width: 768px) {
+    .text_container_comunidade {
+        display: none;
+    }
+    .comunidade_container {
+        width: 100vw;
+    }
+    .titulo_comunidade {
+        width: 60vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .comunidade_form {
+        width: 70vw;
+    }
+    .comunidade_form .campo_comunidade {
+        width: 55vw;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        font-size: 14px;
+        font-family: 'Open Sans';
+    }
+    .inpu_div_comunidade {
+        width: 60vw;
+    }
+
+    .descricao-comunidade{
+        width: 55vw;    
+    }
+    .textarea_comunidade{
+        width: 55vw;
+    }
+}
+
+@media only screen and (max-device-width: 375px) {
+    .text_container_comunidade {
+        display: none;
+    }
+    .comunidade_container {
+        width: 100vw;
+    }
+    .titulo_comunidade {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 15vh;
+        width: 84vw;
+        font-size: 1em;
+    }
+    .inpu_div_comunidade {
+        width: 100vw;
+    }
+    .comunidade_form .campo_comunidade {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 94vw;
+        font-size: 14px;
+        font-family: 'Open Sans';
+    }
+    .descricao-comunidade {
+        width: 88vw;
+    }
+    .textarea_comunidade {
+        width: 88vw;
+    }
+    .comunidade_form input {
+        width: 50vw;
+    }
+    #campo_foto_comunidade label {
+        font-size: 0.5em;
+    }
+    .textarea_comunidade {
+        font-size: 1.104em;
+    }
 }
