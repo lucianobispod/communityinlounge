@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/cadastro_comunidade.css">
+    <link rel="stylesheet" href="css/cadastro_usuario.css">
     <script src="https://kit.fontawesome.com/918d819df9.js"></script>
 
 </head>
@@ -14,71 +14,76 @@
 <body>
     <main>
 
-        <section class="comunidade_section">
+        <section class="usuario_section">
 
-            <div class="text_container_comunidade">
+            <div class="text_container_usuario">
 
-                <div class="circle_comunidade alta_comunidade"></div>
+                <div class="circle_usuario alta_usuario"></div>
 
                 <div>
-                    <h2 class="cor letra_grande_comunidade titulo_h2_comunidade" id="titulo_home">Cadastre sua comunidade!
+                    <h2 class="cor letra_grande_usuario titulo_h2_usuario" id="titulo_home">Olá, seja bem vindo
+                        amigo!
                     </h2>
-                    <h2 class="cor  letra_media_comunidade">E venha fazer seu evento conosco.
+                    <h2 class="cor  letra_media_usuario">Cadastre-se e venha fazer seu evento conosco.
                     </h2>
                 </div>
 
-                <div class="circle_comunidade baixa_comunidade"></div>
+                <div class="circle_usuario baixa_usuario"></div>
             </div>
 
-            <div class="comunidade_container">
+            <div class="usuario_container">
 
-                <div class="titulo_comunidade">
-                    <h1>Cadastre a sua Comunidade</h1>
+                <div class="titulo_usuario">
+                    <h1>Cadastro de Usuario</h1>
                 </div>
 
 
-                <form class="comunidade_form" action="" method="">
-                    <div class="inpu_div_comunidade">
+                <form class="usuario_form" action="" method="">
+                    <div class="inpu_div_usuario">
 
-                        <div class="campo_comunidade">
+                        <div class="campo_usuario">
                             <label for="nome">
                                 Nome:
                             </label>
                             <input type="text" name="nome" id="" placeholder="Douglas dos Santos">
                         </div>
 
-                        <div class="campo_comunidade">
+                        <div class="campo_usuario">
                             <label for="email">
                                 Email:
                             </label>
                             <input type="email" name="email" id="" placeholder="exemplo@email.com">
                         </div>
 
-                        <div class="campo_comunidade">
+                        <div class="campo_usuario">
                             <label for="telefone">
                                 Telefone:
                             </label>
                             <input type="text" name="telefone" id="" placeholder="11 97777-4444">
                         </div>
 
-                        <div class="campo_comunidade">
-                            <label class="campo_foto_comunindade_label" for="campo_foto_comunindade" >
-                                Clicle aqui para enviar uma foto da sua comunidade
+                        <div class="campo_usuario">
+                            <label class="campo_foto_comunindade_label" for="campo_foto_comunindade">
+                                Clicle aqui para enviar uma foto sua
                             </label>
+
                             <input type="file" name="foto" id="campo_foto_comunindade" placeholder=" ">
                         </div>
-                        <div class="descricao-comunidade">
-                            <label for="descricao">
-                                Descrição
+
+                        <div class="campo_usuario_genero">
+                            <label for="">
+                                Sexo:
                             </label>
-                            <textarea name="descricao" class="textarea_comunidade" cols="30" rows="10" placeholder="Fale um pouco da Sua Comunidade..."></textarea>
+                            <input type="radio" name="genero" value="Masculino">Maculino
+                            <input type="radio" name="genero" value="Feminino">Femininos
                         </div>
+
+
 
                     </div>
 
                     <button type="submit">Enviar</button>
                 </form>
-
             </div>
 
         </section>
