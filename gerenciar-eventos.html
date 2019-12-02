@@ -6,186 +6,225 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/918d819df9.js"></script>
+
     <title>Document</title>
 </head>
 
 <body>
+    <header id="header">
+        <div class="header_box">
+            <div class="imagem">
+                <img src="images/logo.png" alt="">
+            </div>
+        </div>
 
+        <nav class="header_menu">
+
+            <div class="container_menu_principal">
+                <ul>
+                    <li>
+                        <a class="ahover" id="li_border" href="#">Crie seu evento</a>
+                    </li>
+                    <li>
+                        <a class="ahover" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="ahover" href="#">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a class="ahover" href="meus-eventos.html">Eventos</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="container_menu_secundario">
+                <ul>
+                    <li>
+                        <a class="ahover" href="login.html">Entre</a>
+                    </li>
+                    <span class="span_ou">ou</span>
+                    <li>
+                        <a class="ahover" href="#">Cadastre-se</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
     <section class="section-calendario-info">
 
         <div class="container-eventos-pendentes">
 
-            <div class="container-titulo-filtro">
-                <div class="gerenciar-titulo">
-                    <h1>Eventos pendentes</h1>
-                </div>
-
-                <div class="evento-filtro-mes">
-                    <h2>Mês</h2>
-                    <form action="" method="get">
-                        <select name="" id="">
-                        <option value="">Selecione</option>
-                        <option value="">item 2</option>
-                        <option value="">item 3</option>
-                    </select>
-                    </form>
-                </div>
+            <div class="gerenciar-titulo">
+                <h1>Calendário</h1>
             </div>
-
-            <!-- <h2>Dias do mes</h2> -->
 
             <div class="container-lista-data">
 
+                <div class="calendario-mes">
+                    <form action="" method="get">
+                        <select name="" id="">
+                           <option value="">Janeiro</option>
+                           <option value="">Fevereiro</option>
+                           <option value="">Março</option>
+                           <option value="">Abril</option>
+                           <option value="">Maio</option>
+                           <option value="">Junho</option>
+                        </select>
+                    </form>
+
+                </div>
+
                 <div class="linha">
 
-                    <div class="data-dia back-verde">1</div>
-                    <div class="data-dia back-cinza">2</div>
-                    <div class="data-dia back-cinza">3</div>
-                    <div class="data-dia back-laranja">4</div>
-                    <div class="data-dia back-vermelho">5</div>
-                    <div class="data-dia back-cinza">6</div>
-                    <div class="data-dia back-cinza">7</div>
-                    <div class="data-dia back-cinza">8</div>
+                    <div class="data-dia border-amarelo">1</div>
+                    <div class="data-dia border-azul">2</div>
+                    <div class="data-dia border-cinza">3</div>
+                    <div class="data-dia border-laranja">4</div>
+                    <div class="data-dia border-vermelho">5</div>
+                    <div class="data-dia border-cinza">6</div>
+                    <div class="data-dia border-cinza">7</div>
+                    <div class="data-dia border-cinza">8</div>
                 </div>
                 <div class="linha">
 
-                    <div class="data-dia back-cinza">9</div>
-                    <div class="data-dia back-cinza">10</div>
-                    <div class="data-dia back-cinza">11</div>
-                    <div class="data-dia back-cinza">12</div>
-                    <div class="data-dia back-cinza">13</div>
-                    <div class="data-dia back-cinza">14</div>
-                    <div class="data-dia back-cinza">15</div>
-                    <div class="data-dia back-cinza">16</div>
+                    <div class="data-dia border-cinza">9</div>
+                    <div class="data-dia border-cinza">10</div>
+                    <div class="data-dia border-cinza">11</div>
+                    <div class="data-dia border-cinza">12</div>
+                    <div class="data-dia border-cinza">13</div>
+                    <div class="data-dia border-cinza">14</div>
+                    <div class="data-dia border-cinza">15</div>
+                    <div class="data-dia border-cinza">16</div>
                 </div>
                 <div class="linha">
 
-                    <div class="data-dia back-cinza">17</div>
-                    <div class="data-dia back-cinza">18</div>
-                    <div class="data-dia back-cinza">19</div>
-                    <div class="data-dia back-cinza">20</div>
-                    <div class="data-dia back-cinza">21</div>
-                    <div class="data-dia back-cinza">22</div>
-                    <div class="data-dia back-cinza">23</div>
-                    <div class="data-dia back-cinza">24</div>
+                    <div class="data-dia border-cinza">17</div>
+                    <div class="data-dia border-cinza">18</div>
+                    <div class="data-dia border-cinza">19</div>
+                    <div class="data-dia border-cinza">20</div>
+                    <div class="data-dia border-cinza">21</div>
+                    <div class="data-dia border-cinza">22</div>
+                    <div class="data-dia border-cinza">23</div>
+                    <div class="data-dia border-cinza">24</div>
                 </div>
                 <div class="linha">
 
-                    <div class="data-dia back-cinza">25</div>
-                    <div class="data-dia back-cinza">26</div>
-                    <div class="data-dia back-cinza">27</div>
-                    <div class="data-dia back-cinza">28</div>
-                    <div class="data-dia back-cinza">29</div>
-                    <div class="data-dia back-cinza">30</div>
-                    <div class="data-dia back-cinza">31</div>
-                    <div class="data-dia back-cinza"></div>
+                    <div class="data-dia border-cinza">25</div>
+                    <div class="data-dia border-cinza">26</div>
+                    <div class="data-dia border-cinza">27</div>
+                    <div class="data-dia border-cinza">28</div>
+                    <div class="data-dia border-cinza">29</div>
+                    <div class="data-dia border-cinza">30</div>
+                    <div class="data-dia border-cinza">31</div>
+                    <div class="data-dia border-cinza"></div>
                 </div>
 
             </div>
 
         </div>
 
-
-        <!-- <div class="container-aprovados-legenda">
-
-            <div class="calendario-eventos-aprovados">
-                <h2>Datas já com eventos marcados</h2>
-                <div class="calendario">
-                    <div class="linha-dia">
-                        <div class="dia">1</div>
-                        <div class="dia">4</div>
-                        <div class="dia">7</div>
-                        <div class="dia">13</div>
-                        <div class="dia">15</div>
-                        <div class="dia">27</div>
-                        <div class="dia">28</div>
-                        <div class="dia">25</div>
-                    </div>
-                    <div class="linha-dia">
-                        <div class="dia">1</div>
-                        <div class="dia">4</div>
-                        <div class="dia">7</div>
-                        <div class="dia">13</div>
-                        <div class="dia">15</div>
-                        <div class="dia">27</div>
-                        <div class="dia">28</div>
-                        <div class="dia">25</div>
-                    </div>
-                    <div class="linha-dia">
-                        <div class="dia">1</div>
-                        <div class="dia">4</div>
-                        <div class="dia">7</div>
-                        <div class="dia">13</div>
-                        <div class="dia">15</div>
-                        <div class="dia">27</div>
-                        <div class="dia">28</div>
-                        <div class="dia">25</div>
-                    </div>
-                    <div class="linha-dia">
-                        <div class="dia">1</div>
-                        <div class="dia">4</div>
-                        <div class="dia">7</div>
-                        <div class="dia">13</div>
-                        <div class="dia">15</div>
-                        <div class="dia">27</div>
-                        <div class="dia">28</div>
-                        <div class="dia">25</div>
-                    </div>
-
-                </div>
-
-                <div class="legenda-calendario-aprovado">
-                    <h3>Calendario aprovado</h3>
-
-                    <div class="linha-legenda">
-                        <div class="cor-leg back-verde"></div>
-                        <h4>asdasd</h4>
-                    </div>
-
-                    <div class="linha-legenda">
-                        <div class="cor-leg back-vermelho"></div>
-                        <h4>asdasdasd</h4>
-                    </div>
-
-                    <div class="linha-legenda">
-                        <h4>As datas que não aparecem aqui não tem evento aprovado. </h4>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </div> -->
-
-        <div class="legenda-calendario">
+        <div class="container-legenda-calendario">
 
             <div class="legenda-calendario-pendente">
-                <h3>Calendario pendente</h3>
+                <h3>Legenda calendário</h3>
 
                 <div class="linha-legenda">
-                    <div class="cor-leg back-verde"></div>
-                    <p>asdasd</p>
+                    <div class="cor-leg back-azul"></div>
+                    <p>Eventos ThoughtWoks</p>
                 </div>
 
                 <div class="linha-legenda">
                     <div class="cor-leg back-laranja"></div>
-                    <p>asdasdasd</p>
+                    <p>Laranja</p>
                 </div>
 
                 <div class="linha-legenda">
                     <div class="cor-leg back-vermelho"></div>
-                    <p>asdasd</p>
-
+                    <p>Vermelho</p>
                 </div>
 
                 <div class="linha-legenda">
-                    <div class="cor-leg back-cinza"></div>
-                    <p>aafafdfgf</p>
+                    <div class="cor-leg back-amarelo"></div>
+                    <p>Amarelo</p>
+                </div>
+
+                <div class="linha-legenda">
+                    Clique no mês para troca-lo.
                 </div>
 
             </div>
+
+
+
+        </div>
+
+    </section>
+
+    <section class="section-lista-eventos-pendentes">
+
+        <div class="tiulo-lista-eventos">
+            <h2>Eventos do dia 30 de mar, ter</h2>
+        </div>
+
+        <div class="lista-eventos-pendentes">
+
+            <div class="card-pendente">
+                <div class="foto-pendente"></div>
+                <div class="info">
+                    <p class="titulo-info">A impotacia da diversidade</p>
+                    <p class="data-info">ter, 30 de mar, 16:20</p>
+                    <p class="comunidade-info">ThoughtWorks</p>
+                </div>
+
+                <div class="botoes">
+                    <button class="rejeitar">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <button class="aceitar">
+                        <i class="fas fa-check"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card-pendente">
+                <div class="foto-pendente"></div>
+                <div class="info">
+                    <p class="titulo-info">A impotacia da diversidade</p>
+                    <p class="data-info">ter, 30 de mar, 16:20</p>
+                    <p class="comunidade-info">ThoughtWorks</p>
+                </div>
+
+                <div class="botoes">
+                    <button class="rejeitar">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <button class="aceitar">
+                        <i class="fas fa-check"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card-pendente">
+                <div class="foto-pendente"></div>
+                <div class="info">
+                    <p class="titulo-info">A impotacia da diversidade</p>
+                    <p class="data-info">ter, 30 de mar, 16:20</p>
+                    <p class="comunidade-info">ThoughtWorks</p>
+                </div>
+
+                <div class="botoes">
+                    <button>
+                        <i class="rejeitar fas fa-times"></i>
+                    </button>
+                    <button>
+                        <i class="aceitar fas fa-check"></i>
+                    </button>
+                </div>
+            </div>
+
+
+
 
 
 
