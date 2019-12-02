@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+:root {
+  --azul: #25bcce;
+  --laranja: #f68e31;
+  --preto: #231f20;
+  --cinza: #808284;
+  --fonte: sans-serif;
+  --cinzaclaro: #ccc;
+  --verde: #29803f;
+  --font: 'Open Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#cdr_ctg_meioPricipal {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  /* background-color: var(--azul) */
+}
+
+.cdr_ctg_caixa {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 49vw;
+  height: 95vh;
+}
+
+.cdr_ctg_caixa2 {
+  width: 45vw;
+  height: 65vh;
+  justify-content: start;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cdr_ctg_caixatitulo {
+  width: 40vw;
+  height: 5vh;
+  text-align: center;
+  margin: 2em;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: var(--fonte);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--preto);
+  margin: 1em;
+}
+
+.cdr_ctg_caixabuscarcategoria {
+  outline: 0;
+  width: 100vw;
+  height: 50vh;
+  padding: 1em;
+}
+
+.cdr_ctg_buscarcategoria {
+  /* border: none; */
+  width: 22vw;
+  height: 5.3vh;
+  background-color: white;
+  /* border: 1px solid black; */
+  display: flex;
+  margin: 1em;
+  border-radius: 0.3125em;
+  border-bottom: 2px solid var(--cinzaclaro);
+}
+
+.cdr_ctg_caixabuscarcategoria {
+  outline: 0;
+  width: 20vw;
+  height: 5vh;
+  border: none;
+  /* background-color: transparent; */
+}
+
+.cdr_ctg_btn {
+  border: none;
+  background-color: transparent;
+}
+
+.cdr_ctg_caixadecategorias {
+  width: 40vw;
+  height: 78vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+}
+
+.cdr_ctg_categoria1 {
+  width: 30vh;
+  height: 14vh;
+  background-color: var(--azul);
+  margin: 1em;
+  border-radius: 0.3125em;
+  color: white;
+  text-transform: uppercase;
+  font-family: var(--fonte);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.cdr_ctg_categoria2 {
+  width: 30vh;
+  height: 14vh;
+  background-color: var(--laranja);
+  margin: 1em;
+  border-radius: 0.3125em;
+  color: white;
+  text-transform: uppercase;
+  font-family: var(--fonte);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.cdr_ctg_categoria3 {
+  width: 30vh;
+  height: 14vh;
+  background-color: var(--cinzaclaro);
+  margin: 1em;
+  border-radius: 0.3125em;
+  color: white;
+  text-transform: uppercase;
+  font-family: var(--fonte);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.cdr_ctg_categoria4 {
+  width: 30vh;
+  height: 14vh;
+  background-color: var(--preto);
+  margin: 1em;
+  border-radius: 0.3125em;
+  color: white;
+  text-transform: uppercase;
+  font-family: var(--fonte);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.cdr_ctg_categoria5 {
+  width: 30vh;
+  height: 14vh;
+  background-color: var(--laranja);
+  margin: 1em;
+  border-radius: 0.3125em;
+  color: white;
+  text-transform: uppercase;
+  font-family: var(--fonte);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.cdr_ctg_categoria6 {
+  width: 30vh;
+  height: 14vh;
+  background-color: var(--cinzaclaro);
+  margin: 1em;
+  border-radius: 0.3125em;
+  color: white;
+  text-transform: uppercase;
+  font-family: var(--fonte);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.cdr_ctg_categoria7 {
+  width: 30vh;
+  height: 14vh;
+  background-color: var(--preto);
+  margin: 1em;
+  border-radius: 0.3125em;
+  color: white;
+  text-transform: uppercase;
+  font-family: var(--fonte);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.cdr_ctg_categoria8 {
+  width: 30vh;
+  height: 14vh;
+  background-color: var(--azul);
+  margin: 1em;
+  border-radius: 0.3125em;
+  color: white;
+  text-transform: uppercase;
+  font-family: var(--fonte);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.cdr_ctg_caixanav {
+  width: 21vw;
+  height: 5vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cdr_ctg_nav {
+  width: 2vw;
+  height: 4vh;
+  color: var(--preto);
+  border-radius: 0.3125em;
+  border: 1px solid black;
+  margin: 0.3em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cdr_ctg_navbtn {
+  background-color: transparent;
+  border: none;
+}
+
+.cdr_ctg_linha {
+  height: 42vw;
+}
+
+.cdr_ctg_caixatitulo1 h2 {
+  text-transform: uppercase;
+  font-family: var(--fonte);
+  color: var(--preto);
+  margin: 0.7em;
+}
+
+.cdr_ctg_caixacadastro {
+  width: 40vw;
+  height: 32vh;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  border-radius: 0.3125em;
+
+}
+
+.cdr_ctg_cadastro {
+  width: 28em;
+  height: 3em;
+  border: 1px solid #808284;
+  border-radius: 5px;
+  padding: 0.5em;
+  border: none;
+  outline: 0;
+  border-bottom: 2px solid var(--cinzaclaro);
+}
+
+.ctg_ctg_btncadastrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ctg_ctg_btn {
+  border: none;
+  background: #25bcce;
+  border-radius: 0.3125em;
+  color: white;
+  height: 5vh;
+  width: 10vw;
+  margin: 1.5em 0 1.5em 0.4em;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  #cdr_ctg_meioPricipal {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+  }
+  .cdr_ctg_caixa {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 46vw;
+    height: 90vh;
+  }
+  .cdr_ctg_caixa2 {
+    width: 46vw;
+    height: 90vh;
+    justify-content: start;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cdr_ctg_caixatitulo {
+    width: 30vw;
+    height: 5vh;
+    text-align: center;
+    margin: 2em;
+  }
+  h1 {
+    text-transform: uppercase;
+    font-family: var(--fonte);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--preto);
+    font-size: 1.5em;
+    margin: 0.8em;
+  }
+  .cdr_ctg_caixatitulo1 h2 {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--fonte);
+    color: var(--preto);
+    margin: 0.7em;
+    font-size: 1.5em;
+  }
+  /* .cdr_ctg_caixabuscarcategoria
+{
+  outline: 0;
+  width: 100vw;
+  height: 50vh;
+  background-color: aqua;
+} */
+  .cdr_ctg_buscarcategoria {
+    width: 28vw;
+    height: 5.3vh;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    margin: 1em;
+    border-radius: 0.3125em;
+  }
+  .cdr_ctg_caixabuscarcategoria {
+    outline: 0;
+    width: 24vw;
+    height: 5vh;
+    border: none;
+    /* background-color: transparent; */
+  }
+  .cdr_ctg_caixadecategorias {
+    width: 47vw;
+    height: 66vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+  }
+  .cdr_ctg_caixacadastro {
+    width: 43vw;
+    height: 40vh;
+    border: 1px solid var(--cinza);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    border-radius: 0.3125em;
+    margin-top: 5.5em;
+  }
+  .cdr_ctg_cadastro {
+    width: 38vw;
+    height: 5vh;
+    border: 1px solid #808284;
+    border-radius: 0.3125em;
+    padding: 0.5em;
+  }
+  .ctg_ctg_btncadastrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ctg_ctg_btn {
+    border: none;
+    background: #25bcce;
+    border-radius: 0.3125em;
+    color: white;
+    height: 5vh;
+    width: 16vw;
+    margin: 1.5em 0 1.5em 0.4em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1em;
+  }
+  .cdr_ctg_caixanav {
+    width: 36vw;
+    height: 18vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cdr_ctg_nav {
+    width: 3vw;
+    height: 5vh;
+    color: var(--preto);
+    border-radius: 0.3125em;
+    border: 1px solid black;
+    margin: 0.3em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cdr_ctg_linha {
+    height: 85vh;
+  }
+}
+
+
+.cdr_ctg_categoria_btnX{
+  position: absolute;
+  top: 2px;
+  right: 7px;
+  border: none;
+  background: none;
+  color: #ffff;
+  outline: 0;
+  font-size: 1.3em;
+}
+.cdr_ctg_categoria_btnX2{
+  position: absolute;
+  top: 2px;
+  right: 7px;
+  border: none;
+  background: none;
+  color: #ffff;
+  outline: 0;
+  font-size: 1.3em;
+}
+.cdr_ctg_categoria_btnX3{
+  position: absolute;
+  top: 2px;
+  right: 7px;
+  border: none;
+  background: none;
+  color: #ffff;
+  outline: 0;
+  font-size: 1.3em;
+}
+.cdr_ctg_categoria_btnX4{
+  position: absolute;
+  top: 2px;
+  right: 7px;
+  border: none;
+  background: none;
+  color: #ffff;
+  outline: 0;
+  font-size: 1.3em;
+}
+.cdr_ctg_categoria_btnX5{
+  position: absolute;
+  top: 2px;
+  right: 7px;
+  border: none;
+  background: none;
+  color: #ffff;
+  outline: 0;
+  font-size: 1.3em;
+}
+.cdr_ctg_categoria_btnX6{
+  position: absolute;
+  top: 2px;
+  right: 7px;
+  border: none;
+  background: none;
+  color: #ffff;
+  outline: 0;
+  font-size: 1.3em;
+}
+.cdr_ctg_categoria_btnX7{
+  position: absolute;
+  top: 2px;
+  right: 7px;
+  border: none;
+  background: none;
+  color: #ffff;
+  outline: 0;
+  font-size: 1.3em;
+}
+.cdr_ctg_categoria_btnX8{
+  position: absolute;
+  top: 2px;
+  right: 7px;
+  border: none;
+  background: none;
+  color: #ffff;
+  outline: 0;
+  font-size: 1.3em;
+}
