@@ -5,127 +5,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Perfil Administrador</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
     <link rel="stylesheet" href="css/cadastro_usuario.css">
+    <script src="https://kit.fontawesome.com/918d819df9.js"></script>
+
 </head>
 
 <body>
-    <header id="header">
-        <div class="header_box">
-            <div class="imagem">
-                <img src="images/logo.png" alt="">
+    <main>
+
+        <section class="usuario_section">
+
+            <div class="text_container_usuario">
+
+                <div class="circle_usuario alta_usuario"></div>
+
+                <div class="titulo_usuario">
+                    <h2>Cadastro de Usuario </h2>
+                </div>
+
+                <div class="circulomeio">
+                </div>
+
+                <div class="campo_usuario_foto">
+                    <i class="fas fa-camera"></i>
+                    <label class="campo_foto_usuario_label" for="campo_foto_usuario">
+                        Clicle aqui para adcionar uma foto
+                    </label>
+                    <input type="file" name="foto" id="campo_foto_usuario" placeholder=" ">
+                </div>
+
+                <div class="circle_usuario baixa_usuario"></div>
             </div>
-        </div>
 
-        <nav class="header_menu">
+            <div class="usuario_container">
 
-            <div class="container_menu_principal">
-                <ul>
-                    <li>
-                        <a class="ahover" id="li_border" href="#">Crie seu evento</a>
-                    </li>
-                    <li>
-                        <a class="ahover" href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a class="ahover" href="#">Sobre nós</a>
-                    </li>
-                    <li>
-                        <a class="ahover" href="meus-eventos.html">Eventos</a>
-                    </li>
+                <form class="usuario_form" action="" method="">
+                    <div class="inpu_div_usuario">
 
-                </ul>
-            </div>
+                        <div class="campo_usuario">
+                            <label for="nome">
+                                Nome:
+                            </label>
+                            <input type="text" name="nome" id="" placeholder="Douglas dos Santos">
+                        </div>
 
+                        <div class="campo_usuario">
+                            <label for="email">
+                                Email:
+                            </label>
+                            <input type="email" name="email" id="" placeholder="exemplo@email.com">
+                        </div>
 
-            <div class="menu_info">
+                        <div class="campo_usuario">
+                            <label for="telefone">
+                                Telefone:
+                            </label>
+                            <input type="text" name="telefone" id="" placeholder="11 97777-4444">
+                        </div>
 
-                <div class="info_usuario">
-                    <div class="foto"></div>
+                        <!-- <div class="campo_usuario">
+                            <label class="campo_foto_usuario_label" for="campo_foto_usuario" >
+                                Clicle aqui para enviar uma foto da sua usuario
+                            </label>
+                            <input type="file" name="foto" id="campo_foto_usuario" placeholder=" ">
+                        </div> -->
+                        <div class="descricao-usuario">
+                            <label for="descricao">
+                                Descrição
+                            </label>
+                            <textarea name="descricao" class="textarea_usuario" cols="30" rows="10"
+                                placeholder="Fale um pouco da Sua usuario..."></textarea>
+                        </div>
 
-                    <div class="nome-usuario">
-                        <p>Luciano Bispo</p>
                     </div>
-                </div>
 
-                <div class="opcoes">
-                    <i class="fas fa-ellipsis-v"></i>
-                </div>
+                    <button type="submit">Enviar</button>
+                </form>
 
             </div>
-
-        </nav>
-    </header>
-
-
-    <main class="perfil-user">
-        <section class="user_container">
-
-            <h1>Perfil de Usuário</h1>
-            <div class="circle_user alta"></div>
-
-            <div class="circle_user baixa"></div>
-
-            <div class="image-persona">
-
-                <img class="persona-avatar" src="images/0.jpg" alt="Foto do Usuário">
-                <div>
-                    <div class="div-upload">
-
-                        <label class="label-file" for="file">
-                            <i class="material-icons">
-                                add_photo_alternate
-                            </i>
-                            Alterar foto</label>
-                        <input id="file" type="file" accept="image/*">
-                    </div>
-                </div>
-            </div>
-
-
 
         </section>
-        <!--Fim de user-edit-->
 
-        <section class="sessao-editar">
-
-            <form class="form-editar">
-
-                <div class="div-edit">
-                    <label class="title-label" for="">Nome</label>
-                    <input class="input-edit" type="text" name="name-user" value="Aléxia Vitória Melhado Pereira" disabled>
-                </div>
-
-                <div class="div-edit" id="asdf">
-                    <label class="title-label" for="">Email</label>
-                    <input class="input-edit" id="email" type="email" name="email" value="email@exemplo.com" disabled>
-                </div>
-
-                <div class="div-edit" >
-                    <label class="title-label" for="">Telefone</label>
-                    <input class="input-edit" name="phone" type="phone" value="(11) 95855-9243" disabled>
-                </div>
-
-                <div class="div-genero">
-                    <label class="label-genero" for="">Gênero</label>
-
-                    <div class="div-radio">
-
-                        <input class="input-gm" type="radio" name="genero" value="masculino">Masculino
-                        <input class="input-gf" type="radio" name="genero" value="feminino">Feminino
-                    </div>
-
-                </div>
-
-                <div class="div-alterar">
-
-                    <button class="botao-alterar">Alterar</button>
-                </div>
-
-        </section>
     </main>
-  
+    <script src="./js/maquina-escrever.js"></script>
 </body>
 
 </html>
