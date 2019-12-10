@@ -1,0 +1,925 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root {
+  --azul: #25bcce;
+  --laranja: #f68e31;
+  --preto: #231f20;
+  --cinza: #808284;
+  --cinzaclaro: #ccc;
+  --verde: #29803f;
+  --branco: #fff;
+  --font: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+a,
+span,
+p {
+  font-family: var(--font);
+}
+
+  /* CARDS MEUS EVENTOS*/
+
+  .card{
+    background: var(--branco);
+    border: 1px solid var(--cinzaclaro);
+    border-radius: 10px;
+    width: 20vw;
+    height: 23vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  
+
+  .data{
+    width: 18vw;
+    height:5vh;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--azul);
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* background: wheat; */
+    
+  }
+  .data p{
+    /* background:gold; */
+    width: 17vw;
+    height:5vh;
+    font-size: 1.3em;
+  }
+  .data i{
+    color: var(--cinzaclaro);
+  }
+
+.identificacao{
+  /* background: teal; */
+  max-height: 10vh;
+  width: 18vw;
+
+}
+
+.evento_titulo{
+  /* background: tomato; */
+  font-size: 1.2em;
+
+}
+.comuni_evento{
+  /* background: turquoise; */
+  font-size: 1em;
+
+
+}
+
+.box_parti-bot{
+   width: 18vw;
+   height: 5vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0em .6em;
+   /* background: yellow; */
+   font-size: .8em;
+}
+
+.partici{
+  /* background: saddlebrown; */
+  font-size: 1.2em;
+}
+
+  .circle{
+    border-radius: 50%;
+  
+  }
+  .pequeno{
+    height: 15px;
+    width: 15px;
+    background: var(--verde);
+  }
+
+  .medio{
+    background: var(--cinzaclaro);
+    height: 20px;
+    width: 20px;
+  }
+  .grande{
+    height: 25px;
+    width: 25px;
+    background: var(--laranja);
+  }
+  
+  .text_italic{
+   font-style: italic;
+   color: var(--cinza); 
+  font-size: 1.2em;
+
+  }
+
+/* LISTA D CARDS */
+
+.list_card{
+   
+  width: 70vw;
+  height: 30vh;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;   
+
+  /* background: red ; */
+ } 
+
+ /* FIM LISTA D CARDS */
+
+  /*FIM CARDS*/
+  
+
+
+
+/*HEADER*/
+
+#header {
+    width: 100vw;   
+    height: 10vh;
+    background: var(--azul);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+
+  .header_box {
+    width: 21vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .imagem{
+    height: 10vh;
+    width: 20vw;
+    /* background: var(--cinza); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .imagem img{
+    height: 8vh;
+    width: 13vw;
+    /* background: red; */
+
+  }
+
+
+  .header_menu {
+    height: 10vh;
+    width:75vw;
+
+    /* background: red; */
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+.container_menu_principal{
+    /* background: rosybrown; */
+
+    height: 8vh;
+    width: 45vw;
+    
+  }
+  .container_menu_principal ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    list-style-type: none;
+    height: 8vh;
+    /* background: violet; */
+  }
+  
+  .container_menu_secundario{
+    width: 16vw;
+  }
+  
+  .container_menu_secundario ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    list-style-type: none;
+    height: 8vh;
+    /* background: violet; */
+  }
+  
+  .span_ou{
+    color: var(--branco);
+    font-style: italic;
+  }
+
+  .header_menu a {
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 1em;
+    /* background: yellowgreen; */
+
+    padding: 0.4em;
+  }
+
+  .header_menu #li_border {
+    padding: .7em;
+    /* background: yellow; */
+    font-weight: 400;
+    border: var(--branco) 2px solid;
+    /* border-bottom:  2px solid white;
+    border-top: 2px solid white; */
+}
+
+.header_menu .ahover:hover {
+  font-weight: 400;
+  border-bottom:  2px solid white;
+}
+
+
+  /*FIM HEADER*/
+  
+
+  /* INDEX */
+
+    /* BANNER */
+    
+    .section_banner{
+      height: 600px;   
+      width: 100vw; 
+      background: rebeccapurple;
+    }
+
+  /* FIM BANNER */
+
+
+  /* TITULO */
+    .section_titulo_index{
+    height: 45vh;
+    width: 100vw;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+  }
+ 
+    .mask_titulo{
+      width: 45vw;
+      height: 35vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .titulo_index {
+      text-transform: uppercase;
+      font-size: 3em;
+      text-align: center;
+      font-weight: bold;
+  }
+  
+  .titulo_index::after {
+    content: '|';
+    margin-left: 4px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+  }
+  
+  @keyframes pisca {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+  }
+ 
+  /* FIM DO TITULO */
+
+
+  /* LINHA */
+  
+    .linha_banner{
+      width: 50vw;
+      margin: 0 auto;
+  }
+
+  /* FIM LINHA  */
+
+
+/* EVENTOS COMUNIDADES */
+
+.eventos_comunidade{
+  height: 70vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* background: #25bcce; */
+}  
+
+.eventos_container{
+  /* background: rebeccapurple; */
+  height: 60vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.titulo_eventos{
+  padding: 1em;  
+  font-size: 2.1em;
+
+  /* background: firebrick; */
+}  
+
+/* FIM EVENTOS COMUNIDADES */  
+
+/* EVENTOS THOUGHTWORKS */
+
+.home_laranja {
+  background-color: #f68e31;
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+  height: 75vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box_eventos_tw{
+  height: 50vh;
+  width: 80vw;
+  background: #231f20;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.home_crie-evento_box{
+  height: 40vh;
+}
+
+.home_titulo-tw {
+  color: #ffffff;
+  font-weight: 800;
+
+  /* background: #ccc;  */
+}
+
+
+/* FIM EVENTOS THOUGHTWORKS */
+
+
+/* SECTION SOBRE NÓS */
+
+.section_sobre {
+  height: 70vh;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+
+  /* background: #ccc; */
+}
+
+.container-geral_sobre{
+  height: 55vh;
+  width: 58vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  /* background: red; */
+}
+
+.titulo_sobre{
+  font-size: 2.3em; 
+  /* background: yellow; */
+}
+
+.sobre_texto{
+  max-width: 45vw;
+}
+
+.texto_p{
+  font-size: 1.2em;
+  width: 55vw;
+  max-height: 50vh;
+  color: var(--preto);
+  overflow-wrap: break-word; 
+  /* background: gold;  */
+}
+
+.call_sobrenos{
+background: var(--laranja);
+padding: .7em;
+font-size:1.3em; 
+text-decoration: none;
+color: #fff;
+}
+/* FIM SECTION SOBRE NOS */
+
+/* CAIXA CRIE SEU EVENTO */
+
+.call_evento{
+  height: 50vh;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: #f68e31; */
+}
+
+.box_call_evento{
+  width: 55vw;
+  height: 26vh;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  border: 0.5em solid #25bcce;
+}
+
+.box_call_evento h4{
+  font-size: 2em;
+}
+.link_saiba_mais{
+  text-decoration: none;
+  background: var(--preto);
+  padding: 1em;
+  color: var(--branco);
+}
+
+/* FIM DA CAIXA CRIE SEU EVENTO */
+
+
+/* FIM INDEX */
+
+
+
+/* MEUS EVENTOS */
+
+.cinza{
+  color: var(--cinza);
+}
+
+.upper {
+  text-transform: uppercase;
+  text-align: center;
+}
+.verde {
+  color: var(--verde);
+}
+.laranja {
+  color: var(--laranja);
+}
+
+.linha_card{
+  width: 45vw;
+  height: 26vh;
+  margin-bottom: 1.5em; 
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.conteiner_section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  
+}
+
+.box_eventos_aprovados {
+  height: 90vh;
+  width: 50vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box_cards_aprovados {
+  height: 80vh;
+  width: 50vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: start;
+  padding-top: 3em;
+  border-right: 1px solid var(--cinzaclaro);
+}
+
+
+.box_eventos_analise {
+  height: 90vh;
+  width: 50vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box_cards_analise {
+  height: 80vh;
+  width: 50vw;
+  padding-top: 3em;
+  border-left: 1px solid var(--cinzaclaro);
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*REALIZADOS*/
+
+.section_realizados {
+  height: 50vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_realizados {
+  height: 40vh;
+  width: 95vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.box_cards_realizados {
+  height: 30vh;
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+/*FIM MEUS EVENTOS */
+
+
+/* LOGIN */
+
+.login_section{
+   width: 100vw;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: red; */
+}
+
+
+.text_container{
+  background: var(--azul);
+  height: 99vh;
+  width: 50vw;
+  position: relative;
+  box-shadow: var(--cinzaclaro) 1px 1px 2px 0px ;
+}
+
+
+.login_container{
+height: 99vh;
+width: 50vw;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-direction: column;
+border-radius: 5px;
+box-shadow: var(--cinzaclaro) 1px 1px 2px 1px ;
+
+position: relative;
+
+}
+
+.fechar-login{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 1.5em;
+  color: var(--preto);
+}
+
+
+.circle_login{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: var(--branco);
+  position: absolute;
+  
+}
+
+.alta{
+  top: 2vh;
+  left: -4vw;
+}
+
+.baixa{
+  bottom: 2vh;
+  right:-4vw;
+}
+
+.titulo_login{
+/* background: rebeccapurple;   */
+height: 15vh;
+width: 20vw;
+font-size: 1.3em;
+}
+
+
+
+.letra_grande{
+  font-size: 2em;
+}
+.letra_media{
+  font-size: 2.5em;
+
+}
+.text_container{
+  color: var(--branco);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  /* background: rebeccapurple; */
+}
+
+.texto-amigo-login-esqueceu{
+  margin-left: 10px;
+  
+}
+
+.titulo_h2_login::after {
+  content: '|';
+  margin-left: 4px;
+  opacity: 1;
+  animation: pisca .7s infinite;
+}
+
+.login_form{
+/* background: royalblue; */
+height: 27vh;
+width: 23vw;
+
+display: flex;
+align-items: center;
+justify-content: space-around;
+flex-direction: column;
+}
+
+
+.login_form input{
+  height: 4.5vh;
+  width: 15vw;
+  border: none;
+  color: var(--cinza);
+  padding: 0 .5em;
+  outline: 0;
+  
+}
+.inpu_div{
+/* background: rebeccapurple; */
+height: 13vh;
+display: flex;
+align-items: center;
+justify-content: space-around;
+flex-direction: column;
+}
+
+.login_form .campo{
+  border-radius: 5px;
+  color: var(--cinza);
+    border-bottom: 2px solid var(--cinzaclaro);
+    font-family: var(--font);
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20vw;
+    /* background: #29803f; */
+    }
+  
+.login_form button{
+background: var(--azul);
+border-radius: 5px;
+border: none;
+height: 5vh;
+width: 20vw;
+color: var(--branco);
+}
+
+.login_reset_senha{
+  width: 14vw;
+  color: var(--cinza);
+  font-size: .8em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  /* background: var(--verde); */
+}
+
+.login_reset_senha a {
+  text-decoration: none;
+  color: var(--cinza);
+}
+
+.call_recuperar-senha{
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  border: none;
+  background: var(--branco);
+  color: var(--azul);
+  box-shadow: var(--cinzaclaro) 1px 1px 1px 1px;
+  outline: 0;
+}
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+
+.swing:hover
+{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+}
+/* FIM LOGIN */
+
+<<<<<<< HEAD
+=======
+/* ESQUECEU SENHA  */
+
+.titulo_esqueceu-senha{
+  height: 15vh;
+  width: 25vw;
+  font-size: 1.3em;
+}
+/* FIM ESQUECEU SENHA  */
+
+
+>>>>>>> 305ad25435cc692449e734399af84c018c7469d8
+/*FOOTER*/
+.footer {
+  height: 12vh;
+  width: 100vw;
+  background: var(--cinza);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+.footer_empresa{
+  height: 10vh;
+  /* background: crimson; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contato {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background: cornflowerblue; */
+}
+
+.contato a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer_midiasocial {
+  height: 10vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  /* background: chocolate; */
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 15vw;
+  /* background: chartreuse; */
+}
+
+.icons_media {
+  font-size: 1.8em;
+}
+
+/*FIM FOOTER*/

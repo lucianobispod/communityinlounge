@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perfil do Usuário</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/perfilUsuario.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="header_box">
+            <div class="imagem">
+                <img src="images/logo.png" alt="">
+            </div>
+        </div>
+
+        <nav class="header_menu">
+
+            <div class="container_menu_principal">
+                <ul>
+                    <li>
+                        <a class="ahover" id="li_border" href="#">Crie seu evento</a>
+                    </li>
+                    <li>
+                        <a class="ahover" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="ahover" href="#">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a class="ahover" href="meus-eventos.html">Eventos</a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+            <div class="menu_info">
+
+                <div class="info_usuario">
+                    <div class="foto"></div>
+
+                    <div class="nome-usuario">
+                        <p>Aléxia Vitória</p>
+                    </div>
+                </div>
+
+                <div class="opcoes">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main class="perfil-user">
+        <section class="user_container">
+
+                <h1>Perfil de Usuário</h1>
+                <div class="circle_user alta"></div>
+
+                <div class="circle_user baixa"></div>
+
+                <div class="image-persona">
+
+                    <img class="persona-avatar" src="images/49490991_2615930991966664_1854088423350992896_o.jpg"
+                        alt="Foto do Usuário">
+                        <div>
+                                <div class="div-upload">
+
+                                    <label class="label-file" for="file">
+                                        <i class="material-icons">
+                                            add_photo_alternate
+                                        </i>
+                                        Alterar foto</label>
+                                        <input id="file"  type="file" accept="image/*">
+                                    </div>
+                        </div>
+                </div>
+         
+
+
+        </section>
+        <!--Fim de user-edit-->
+
+        <section class="sessao-editar">
+            
+                <form class="form-editar" action="">
+                    <div class="div-edit">
+                        <label class="title-label" for="">Nome</label>
+                        <input class="input-edit" type="text" placeholder="Aléxia Vitória Melhado Pereira" disabled>
+                    </div>
+
+                    <div class="div-edit">
+                        <label class="title-label" for="">Email</label>
+                        <input class="input-edit" type="email" value="email@exemplo.com" disabled>
+                    </div>
+                    <div class="div-edit">
+                        <label class="title-label" for="">Telefone</label>
+                        <input class="input-edit" type="phone" placeholder="Telefone">
+                    </div>
+                    <div class="div-genero">
+                        <label class="label-genero" for="">Gênero</label>
+
+                        <div class="div-radio">
+                            <input class="input-gm" type="radio" name="genero" value="masculino" disabled>Masculino
+                            <input class="input-gf" type="radio" name="genero" value="feminino">Feminino
+                        </div>
+                        
+                    </div>
+
+                    <div class="div-alterar">
+
+                        <button class="botao-alterar" type="submit">Alterar</button>
+                    </div>
+        
+        </section>
+    </main>
+
+</body>
+
+</html>
