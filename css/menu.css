@@ -93,28 +93,29 @@ p {
 
 .menu_info {
     width: 16vw;
-    height: 8vh;
+    height: 9vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background: rosybrown;
+    justify-content: space-evenly;
+    /* background: rosybrown; */
 }
 
 .info_usuario {
     width: 15vw;
+    height: 7.5vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: cornsilk;
+    /* background: cornsilk; */
 }
 
 .nome-usuario {
-    background: chocolate;
+    /* background: chocolate; */
     font-size: 1.2em;
     margin-left: .3em;
     width: 10vw;
     height: 5vh;
-    border-right: 1px solid var(--branco);
+    /* border-right: 1px solid var(--branco); */
     display: flex;
     align-items: center;
     color: var(--branco);
@@ -164,45 +165,57 @@ p {
 }
 
 
-
-
-
 /* The container <div> - needed to position the dropdown content */
+
 .dropdown {
     position: relative;
     display: inline-block;
     cursor: pointer;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+    /* background: rebeccapurple; */
+    height: 8vh;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
     display: none;
     position: absolute;
-    background-color: #8a3b3b;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 18vw;
+    left: 43px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
     z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content button {
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content button {
     color: black;
-    padding: 15px 20px;
-    width: 160px;
+    padding: 16px 0;
+    width: 12vw;
     background-color: #f1f1f1;
     display: none;
-
     text-decoration: none;
     display: block;
     border: none;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content button:hover {background-color: #b6b0b0}
-  
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
+    font-size: .8em;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content button:hover {
+    background-color: #f5f5f7;
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
     display: block;
-  }
-  
+}
+
+.dropdown:hover {
+    border: 2px solid var(--branco);
+}
